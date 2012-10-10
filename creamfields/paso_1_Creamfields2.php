@@ -30,7 +30,7 @@ if ($user) {
         
         <style>
             body {
-                background: url(micreamfields002.png) no-repeat center top;
+                background: url(images/micreamfields02.png) no-repeat center top;
             }
         </style>
         <link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -217,13 +217,13 @@ if ($user) {
 			<div id="foto-dj"></div>
 			<div id="nombre-dj">Steve Lawler</div>
   			<div id="descripcion-dj">descripcion del dj</div>
-  			<div id="boton-dj">BOTON</div>
+  			<div id="boton-dj"><a href="paso_2_Creamfields.php"><img src="images/botones/seleccionar_artista.png" /></a></div>
 			</div>
 			
 			
 			
 	  <?php if ($user): ?>
-                <div id="start-paso1"><a href="paso_2_Creamfields.php"><img src="images/continuar.png" /></a></div>
+                <div id="start-paso1"><a href="paso_2_Creamfields.php"><img src="images/botones/continuar.png" /></a></div>
             <?php else: ?>
                 <div id="like-paso1">
                     Ingresa a Facebook

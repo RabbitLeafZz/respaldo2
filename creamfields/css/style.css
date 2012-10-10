@@ -12,32 +12,32 @@
 
 #main {
 	
-	margin-left:-371px;
+	margin-left:-578px;
 	margin-top:185px;
 }
 
 
 #clubroom{
 	
-	margin-left: -183px;
+	margin-left: -402px;
 	margin-top: -333px;
 }
 
 #alternative{
 	
-	margin-left: 6px;
+	margin-left: -226px;
 	margin-top: -334px;
 }
 
 #cream{
 	
-	margin-left: 188px;
+	margin-left: -55px;
 	margin-top: -334px;
 }
 
 #zero{
 	
-	margin-left: 370px;
+	margin-left: 118px;
 	margin-top: -335px;
 }
 
@@ -70,8 +70,8 @@
   font-family:creamfields;
   position: absolute;
   display: none;
-  margin-left: 650px;
-  margin-top: -370px;
+  margin-left: 547px;
+  margin-top: -359px;
 }
 
 #BIO-art
@@ -79,8 +79,8 @@
 font-family:creamfields;
   position: absolute;
   display: none;
-  margin-left: 650px;
-  margin-top: -370px;
+   margin-left: 547px;
+  margin-top: -359px;
 }
 
 #BIO-calvin
@@ -88,8 +88,8 @@ font-family:creamfields;
 font-family:creamfields;
   position: absolute;
   display: none;
-  margin-left: 650px;
-  margin-top: -370px;
+  margin-left: 547px;
+  margin-top: -359px;
 }
 
 #BIO-david
@@ -97,8 +97,8 @@ font-family:creamfields;
 font-family:creamfields;
   position: absolute;
   display: none;
-  margin-left: 650px;
-  margin-top: -370px;
+   margin-left: 547px;
+  margin-top: -359px;
 }
 
 #BIO-fedde
@@ -106,8 +106,8 @@ font-family:creamfields;
 font-family:creamfields;
   position: absolute;
   display: none;
-  margin-left: 650px;
-  margin-top: -370px;
+   margin-left: 547px;
+  margin-top: -359px;
 }
 
 #BIO-guti
@@ -115,17 +115,17 @@ font-family:creamfields;
 font-family:creamfields;
   position: absolute;
   display: none;
-  margin-left: 650px;
-  margin-top: -370px;
-}
+   margin-left: 547px;
+  margin-top: -359px;
+  }
 
 #BIO-infected
 {
 font-family:creamfields;
   position: absolute;
   display: none;
-  margin-left: 650px;
-  margin-top: -370px;
+   margin-left: 547px;
+  margin-top: -359px;
 }
 
 #BIO-james
@@ -133,8 +133,8 @@ font-family:creamfields;
 font-family:creamfields;
   position: absolute;
   display: none;
-  margin-left: 650px;
-  margin-top: -370px;
+  margin-left: 547px;
+  margin-top: -359px;
 }
 
 #BIO-jaime
@@ -142,8 +142,8 @@ font-family:creamfields;
 font-family:creamfields;
   position: absolute;
   display: none;
-  margin-left: 650px;
-  margin-top: -370px;
+   margin-left: 547px;
+  margin-top: -359px;
 }
 
 #BIO-mathias
@@ -151,8 +151,8 @@ font-family:creamfields;
 font-family:creamfields;
   position: absolute;
   display: none;
-  margin-left: 650px;
-  margin-top: -370px;
+   margin-left: 547px;
+  margin-top: -359px;
 }
 
 #BIO-nervo
@@ -160,8 +160,8 @@ font-family:creamfields;
 font-family:creamfields;
   position: absolute;
   display: none;
-  margin-left: 650px;
-  margin-top: -370px;
+   margin-left: 547px;
+  margin-top: -359px;
 }
 
 #BIO-reboot
@@ -169,8 +169,8 @@ font-family:creamfields;
 font-family:creamfields;
   position: absolute;
   display: none;
-  margin-left: 650px;
-  margin-top: -370px;
+   margin-left: 547px;
+  margin-top: -359px;
 }
 
 #BIO-solomun
@@ -178,8 +178,8 @@ font-family:creamfields;
 font-family:creamfields;
   position: absolute;
   display: none;
-  margin-left: 650px;
-  margin-top: -370px;
+   margin-left: 547px;
+  margin-top: -359px;
 }
 
 #BIO-steve
@@ -189,13 +189,17 @@ color: white;
 font-family:creamfields;
   position: absolute;
   display: none;
-  margin-left: 650px;
-  margin-top: -370px;
+   margin-left: 547px;
+  margin-top: -359px;
 }
 
 #nombre-dj{
 font-size: large;
 
+}
+
+#boton-dj{
+margin-top: 200px;	
 }
 
 
@@ -240,7 +244,7 @@ font-size: large;
 
 
 
-
+/*
 .alex{
 z-index: 1001;
 text-decoration: none;
