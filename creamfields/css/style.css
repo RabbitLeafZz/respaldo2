@@ -224,7 +224,8 @@ font-size: large;
 }
 
 #boton-dj{
-margin-top: 200px;	
+	position:absolute;
+margin-top: 112px;	
 }
 
 
