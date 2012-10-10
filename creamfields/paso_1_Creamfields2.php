@@ -123,99 +123,99 @@ if ($user) {
  		</div>
 			
 			<div id="BIO-alesso">
-			<div id="foto-dj"></div>
 			<div id="nombre-dj">Alesso</div>
+			<div id="foto-dj"><img src="images/fotosdjs-bio/alesso.png" /></div>
   			<div id="descripcion-dj">descripcion del dj</div>
   			<div id="boton-dj"><a href="paso_2_Creamfields.php"><img src="images/botones/seleccionar_artista.png" /></a></div>
 			</div>
 			
 			<div id="BIO-art">
-			<div id="foto-dj"></div>
-			<div id="nombre-dj">Matanza</div>
+			<div id="nombre-dj">Art Department</div>
+			<div id="foto-dj"><img src="images/fotosdjs-bio/art-departament.png" /></div>
   			<div id="descripcion-dj">descripcion del dj</div>
   			<div id="boton-dj"><a href="paso_2_Creamfields.php"><img src="images/botones/seleccionar_artista.png" /></a></div>
 			</div>
 			
 			<div id="BIO-calvin">
-			<div id="foto-dj"></div>
 			<div id="nombre-dj">Calvin Harris</div>
+			<div id="foto-dj"><img src="images/fotosdjs-bio/calvin-harris.png" /></div>
   			<div id="descripcion-dj">descripcion del dj</div>
   			<div id="boton-dj"><a href="paso_2_Creamfields.php"><img src="images/botones/seleccionar_artista.png" /></a></div>
 			</div>
 			
 			<div id="BIO-david">
-			<div id="foto-dj"></div>
 			<div id="nombre-dj">David Guetta</div>
+			<div id="foto-dj"><img src="images/fotosdjs-bio/david-guetta.png" /></div>
   			<div id="descripcion-dj">descripcion del dj</div>
   			<div id="boton-dj"><a href="paso_2_Creamfields.php"><img src="images/botones/seleccionar_artista.png" /></a></div>
 			</div>
 			
 			<div id="BIO-fedde">
-			<div id="foto-dj"></div>
 			<div id="nombre-dj">Fedde le Grand</div>
+			<div id="foto-dj"><img src="images/fotosdjs-bio/fedde-le-grand.png" /></div>
   			<div id="descripcion-dj">descripcion del dj</div>
   			<div id="boton-dj"><a href="paso_2_Creamfields.php"><img src="images/botones/seleccionar_artista.png" /></a></div>
 			</div>
 			
 			<div id="BIO-guti">
-			<div id="foto-dj"></div>
 			<div id="nombre-dj">Guti</div>
+			<div id="foto-dj"><img src="images/fotosdjs-bio/guti.png" /></div>
   			<div id="descripcion-dj">descripcion del dj</div>
   			<div id="boton-dj"><a href="paso_2_Creamfields.php"><img src="images/botones/seleccionar_artista.png" /></a></div>
 			</div>
 			
 			<div id="BIO-infected">
-			<div id="foto-dj"></div>
 			<div id="nombre-dj">Infected Mushroom</div>
+			<div id="foto-dj"><img src="images/fotosdjs-bio/infect-mushroom.png" /></div>
   			<div id="descripcion-dj">descripcion del dj</div>
   			<div id="boton-dj"><a href="paso_2_Creamfields.php"><img src="images/botones/seleccionar_artista.png" /></a></div>
 			</div>
 			
 			<div id="BIO-james">
-			<div id="foto-dj"></div>
 			<div id="nombre-dj">James Zabiella</div>
+			<div id="foto-dj"><img src="images/fotosdjs-bio/jamie-zabiela.png" /></div>
   			<div id="descripcion-dj">descripcion del dj</div>
   			<div id="boton-dj"><a href="paso_2_Creamfields.php"><img src="images/botones/seleccionar_artista.png" /></a></div>
 			</div>
 			
 			<div id="BIO-jaime">
-			<div id="foto-dj"></div>
 			<div id="nombre-dj">Jamie jones</div>
+			<div id="foto-dj"><img src="images/fotosdjs-bio/jamie-jones.png" /></div>
   			<div id="descripcion-dj">descripcion del dj</div>
   			<div id="boton-dj"><a href="paso_2_Creamfields.php"><img src="images/botones/seleccionar_artista.png" /></a></div>
 			</div>
 			
 			<div id="BIO-mathias">
-			<div id="foto-dj"></div>
 			<div id="nombre-dj">Mathias Kaden</div>
+			<div id="foto-dj"><img src="images/fotosdjs-bio/mathias-kaden.png" /></div>
   			<div id="descripcion-dj">descripcion del dj</div>
   			<div id="boton-dj"><a href="paso_2_Creamfields.php"><img src="images/botones/seleccionar_artista.png" /></a></div>
 			</div>
 			
 			<div id="BIO-nervo">
-			<div id="foto-dj"></div>
 			<div id="nombre-dj">Nervo</div>
+			<div id="foto-dj"><img src="images/fotosdjs-bio/nervo.png" /></div>
   			<div id="descripcion-dj">descripcion del dj</div>
   			<div id="boton-dj"><a href="paso_2_Creamfields.php"><img src="images/botones/seleccionar_artista.png" /></a></div>
 			</div>
 			
 			<div id="BIO-reboot">
-			<div id="foto-dj"></div>
 			<div id="nombre-dj">Reboot</div>
+			<div id="foto-dj"><img src="images/fotosdjs-bio/rebbot.png" /></div>
   			<div id="descripcion-dj">descripcion del dj</div>
   			<div id="boton-dj"><a href="paso_2_Creamfields.php"><img src="images/botones/seleccionar_artista.png" /></a></div>
 			</div>
 			
 			<div id="BIO-solomun">
-			<div id="foto-dj"></div>
 			<div id="nombre-dj">Solomun</div>
+			<div id="foto-dj"><img src="images/fotosdjs-bio/solomun.png" /></div>
   			<div id="descripcion-dj">descripcion del dj</div>
   			<div id="boton-dj"><a href="paso_2_Creamfields.php"><img src="images/botones/seleccionar_artista.png" /></a></div>			
   			</div>
 			
 			<div id="BIO-steve">
-			<div id="foto-dj"></div>
 			<div id="nombre-dj">Steve Lawler</div>
+			<div id="foto-dj"><img src="images/fotosdjs-bio/steve-lawler.png" /></div>
   			<div id="descripcion-dj">descripcion del dj</div>
   			<div id="boton-dj"><a href="paso_2_Creamfields.php"><img src="images/botones/seleccionar_artista.png" /></a></div>
 			</div>
