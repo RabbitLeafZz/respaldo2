@@ -65,16 +65,6 @@
 }
 
 
-#BIO-alesso 
-{
-	font-size: medium;
-color: white;
-  font-family:creamfields;
-  position: absolute;
-  display: none;
-  margin-left: 547px;
-  margin-top: -359px;
-}
 
 #BIO-art
 {
@@ -97,6 +87,19 @@ font-family:creamfields;
   margin-left: 547px;
   margin-top: -359px;
 }
+
+#BIO-alesso 
+{
+	font-size: medium;
+color: white;
+  font-family:creamfields;
+  position: absolute;
+  display: none;
+  margin-left: 547px;
+  margin-top: -359px;
+}
+
+
 
 #BIO-david
 {
@@ -218,6 +221,16 @@ font-family:creamfields;
   margin-top: -359px;
 }
 
+#BIO-alex{
+font-size: medium;
+color: white;
+font-family:creamfields;
+  position: absolute;
+  display: none;
+   margin-left: 547px;
+  margin-top: -359px;
+}
+
 #nombre-dj{
 	margin-top:15px;
 font-size: 2.5em;
@@ -242,6 +255,11 @@ text-align: left;
 font-size:0.8em;
 padding:0;	
 line-height:15px;
+}
+
+.bottom{
+position:absolute;
+	
 }
 
 
@@ -284,6 +302,58 @@ line-height:15px;
     filter: alpha(opacity=0);		
 }
 
+#marciano img {
+  	
+  	
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;		
+    transition: opacity 1s ease-in-out;
+}
+
+
+#marciano img.transparent {
+    opacity:0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);		
+}
+
+#calvin img {
+  	
+  	
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;		
+    transition: opacity 1s ease-in-out;
+}
+
+
+#calvin img.transparent {
+    opacity:0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);		
+}
+
+
+
+#david img {
+  	
+  	
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;		
+    transition: opacity 1s ease-in-out;
+}
+
+
+#david img.transparent {
+    opacity:0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);		
+}
 
 
 /*

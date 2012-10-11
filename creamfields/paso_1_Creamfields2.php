@@ -46,8 +46,8 @@ if ($user) {
         <script>
         /*jQuery 1.7*/
 		$(document).on('ready', function() {
-   			 $("#alex img.top").on('click', function() {
-            		$("#alex img.top").toggleClass("transparent");
+   			 $("#boton-alex").on('click', function() {
+            		$("#alex img.bottom").toggleClass("transparent");
        					 });
 					});
         </script>
@@ -55,8 +55,32 @@ if ($user) {
          <script>
         /*jQuery 1.7*/
 		$(document).on('ready', function() {
-   			 $("#matanza img.top").on('click', function() {
-            		$("#matanza img.top").toggleClass("transparent");
+   			 $("#matanza img.bottom").on('click', function() {
+            		$("#matanza img.bottom").toggleClass("transparent");
+       					 });
+					});
+        </script>
+           <script>
+        /*jQuery 1.7*/
+		$(document).on('ready', function() {
+   			 $("#marciano img.bottom").on('click', function() {
+            		$("#marciano img.bottom").toggleClass("transparent");
+       					 });
+					});
+        </script>
+            <script>
+        /*jQuery 1.7*/
+		$(document).on('ready', function() {
+   			 $("#boton-calvin").on('click', function() {
+            		$("#calvin img.bottom").toggleClass("transparent");
+       					 });
+					});
+        </script>
+             <script>
+        /*jQuery 1.7*/
+		$(document).on('ready', function() {
+   			 $("#boton-david").on('click', function() {
+            		$("#david img.bottom").toggleClass("transparent");
        					 });
 					});
         </script>
@@ -64,53 +88,62 @@ if ($user) {
     <body>
     
 		<div id="main">
-  			<div id="alex"><a href="#" id="flipToRecover" class="flipLink"><img class="top" src="images/boxes/alex.png" /></a></div>
-			<div id="matanza"><a href="#" id="flipToRecover" class="flipLink"><img class="top" src="images/boxes/matanza.png" /></div>
-			<div id="marciano"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/marciano.png" /></div>
-			<div id="calvin"><a href="javascript:toggleLayer('BIO-calvin');" ><img src="images/boxes/calvin.png" /></div>
-			<div id="david"><a href="javascript:toggleLayer('BIO-david');" ><img src="images/boxes/david.png" /></div>
-			<div id="infected"><a href="javascript:toggleLayer('BIO-infected');" ><img src="images/boxes/infected.png" /></div>
+  			<div id="alex" ><a href="javascript:toggleLayer('BIO-alex');" ><img class="bottom" src="images/boxes/alex.png" /><img class="top" src="images/boxes-2/alex.png" /></a></div>
+			<div id="matanza"><a href="#" id="flipToRecover" class="flipLink"><img class="bottom" src="images/boxes/matanza.png" /><img class="top" src="images/boxes-2/MATANZA.png" /></a></div>
+			<div id="marciano"><a href="#" id="flipToRecover" class="flipLink"><img class="bottom" src="images/boxes/marciano.png" /><img class="top" src="images/boxes-2/MARCIANO.png" /></a></div>
+			<div id="calvin"><a href="javascript:toggleLayer('BIO-calvin');" ><img class="bottom" src="images/boxes/calvin.png" /><img class="top" src="images/boxes-2/CALVIN.png" /></a></div>
+			<div id="david"><a href="javascript:toggleLayer('BIO-david');" ><img class="bottom" src="images/boxes/david.png" /><img class="top" src="images/boxes-2/DAVID.png" /></a></div>
+			<div id="infected"><a href="javascript:toggleLayer('BIO-infected');" ><img src="images/boxes/infected.png" /></a></div>
  		</div>
 
 		<div id="clubroom">
-  			<div id="felipe"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/felipevenegas.png" /></div>
-			<div id="butano"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/butano.png" /></div>
-			<div id="mathias"><a href="javascript:toggleLayer('BIO-mathias');" ><img src="images/boxes/mathias.png" /></div>
-			<div id="solomun"><a href="javascript:toggleLayer('BIO-solomun');" ><img src="images/boxes/solomun.png" /></div>
-			<div id="art"><a href="javascript:toggleLayer('BIO-art');" ><img src="images/boxes/art.png" /></div>
+  			<div id="felipe"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/felipevenegas.png" /></a></div>
+			<div id="butano"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/butano.png" /></a></div>
+			<div id="mathias"><a href="javascript:toggleLayer('BIO-mathias');" ><img src="images/boxes/mathias.png" /></a></div>
+			<div id="solomun"><a href="javascript:toggleLayer('BIO-solomun');" ><img src="images/boxes/solomun.png" /></a></div>
+			<div id="art"><a href="javascript:toggleLayer('BIO-art');" ><img src="images/boxes/art.png" /></a></div>
 			<div id="jaime"><a href="javascript:toggleLayer('BIO-jaime');" ><img src="images/boxes/jaime.png" /></div>
  		</div>
 
 		<div id="alternative">
-  			<div id="rodrigo"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/rodrigo.png" /></div>
-			<div id="marcos"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/marcos.png" /></div>
-			<div id="michael"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/michael.png" /></div>
-			<div id="nervo"><a href="javascript:toggleLayer('BIO-nervo');" ><img src="images/boxes/nervo.png" /></div>
-			<div id="alesso"><a href="javascript:toggleLayer('BIO-alesso');" ><img src="images/boxes/alesso.png" /></div>
-			<div id="fedde"><a href="javascript:toggleLayer('BIO-fedde');" ><img src="images/boxes/fedde.png" /></div>
+  			<div id="rodrigo"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/rodrigo.png" /></a></div>
+			<div id="marcos"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/marcos.png" /></a></div>
+			<div id="michael"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/michael.png" /></a></div>
+			<div id="nervo"><a href="javascript:toggleLayer('BIO-nervo');" ><img src="images/boxes/nervo.png" /></a></div>
+			<div id="alesso"><a href="javascript:toggleLayer('BIO-alesso');" ><img src="images/boxes/alesso.png" /></a></div>
+			<div id="fedde"><a href="javascript:toggleLayer('BIO-fedde');" ><img src="images/boxes/fedde.png" /></a></div>
  		</div>
 
 		<div id="cream">
-  			<div id="pia"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/pia.png" /></div>
-			<div id="tweeter"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/tweeter.png" /></div>
-			<div id="guti"><a href="javascript:toggleLayer('BIO-guti');" ><img src="images/boxes/guti.png" /></div>
-			<div id="reboot"><a href="javascript:toggleLayer('BIO-reboot');" ><img src="images/boxes/reboot.png" /></div>
-			<div id="steve"><a href="javascript:toggleLayer('BIO-steve');" ><img src="images/boxes/steve.png" /></div>
-			<div id="james"><a href="javascript:toggleLayer('BIO-james');" ><img src="images/boxes/james.png" /></div>
+  			<div id="pia"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/pia.png" /></a></div>
+			<div id="tweeter"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/tweeter.png" /></a></div>
+			<div id="guti"><a href="javascript:toggleLayer('BIO-guti');" ><img src="images/boxes/guti.png" /></a></div>
+			<div id="reboot"><a href="javascript:toggleLayer('BIO-reboot');" ><img src="images/boxes/reboot.png" /></a></div>
+			<div id="steve"><a href="javascript:toggleLayer('BIO-steve');" ><img src="images/boxes/steve.png" /></a></div>
+			<div id="james"><a href="javascript:toggleLayer('BIO-james');" ><img src="images/boxes/james.png" /></a></div>
  		</div>
 			
 		<div id="zero">
-  			<div id="javiersuka"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/javiersuka.png" /></div>
-			<div id="nicocrespo"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/nicocrespo.png" /></div>
-			<div id="fernandomujica"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/fernandomujica.png" /></div>
-			<div id="rodrigoguendelman"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/rodrigoguendelman.png" /></div>
-			<div id="fernandaarrau"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/fernandaarrau.png" /></div>
-			<div id="vivesgforero"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/vives.png" /></div>
-			<div id="franciscoparra"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/franciscoparra.png" /></div>
-			<div id="gustavoallendes"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/gustavoallendes.png" /></div>
-			<div id="ignacioaguirre"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/ignacioaguirre.png" /></div>
-			<div id="phillipetruan"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/phillipetruan.png" /></div>
+  			<div id="javiersuka"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/javiersuka.png" /></a></div>
+			<div id="nicocrespo"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/nicocrespo.png" /></a></div>
+			<div id="fernandomujica"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/fernandomujica.png" /></a></div>
+			<div id="rodrigoguendelman"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/rodrigoguendelman.png" /></a></div>
+			<div id="fernandaarrau"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/fernandaarrau.png" /></a></div>
+			<div id="vivesgforero"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/vives.png" /></a></div>
+			<div id="franciscoparra"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/franciscoparra.png" /></a></div>
+			<div id="gustavoallendes"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/gustavoallendes.png" /></a></div>
+			<div id="ignacioaguirre"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/ignacioaguirre.png" /></a></div>
+			<div id="phillipetruan"><a href="#" id="flipToRecover" class="flipLink"><img src="images/boxes/phillipetruan.png" /></a></div>
  		</div>
+			
+			<div id="BIO-alex" class="bios">
+			<div id="nombre-dj">Alex</div>
+			<div id="foto-dj"><img src="images/fotosdjs-bio/logo-1.png" /></div>
+  			<div id="descripcion-dj"></div>
+  			<div id="boton-alex"><a href="#" id="flipToRecover" class="flipLink"><img src="images/botones/seleccionar_artista.png" /></a></div>
+			
+			
+			
 			
 			<div id="BIO-alesso" class="bios">
 			<div id="nombre-dj">Alesso</div>
@@ -120,14 +153,14 @@ Con sólo 21 años de edad, ya es considerado una de las grandes revelaciones de
 Fue descubierto en su ciudad natal por Sebastian Ingrosso, miembro de Swedish House Mafia. 
 En Marzo de este año tuvo el privilegio de ser invitado por la BBC Radio 1, para mezclar en el prestigioso espacio radial denominado Essential Mix
 </div>
-  			<div id="boton-dj"><a href="paso_2_Creamfields.php"><img src="images/botones/seleccionar_artista.png" /></a></div>
+  			<div id="boton-dj"><a href="#" id="flipToRecover" class="flipLink"><img src="images/botones/seleccionar_artista.png" /></a></div>
 			</div>
 			
 			<div id="BIO-art" class="bios">
 			<div id="nombre-dj">Art Department</div>
 			<div id="foto-dj"><img src="images/fotosdjs-bio/art-departament.png" /></div>
   			<div id="descripcion-dj">Este proyecto musical nace del encuentro de Kenny Glasgow veterano de la escena electrónica mundial y el joven Jonny White. Uno desde la vereda de la experiencia y el otro desde la esquina de la frescura y la juventud, se juntan para plantear música dentro de la escena del House desde un punto de vista menos comercial.</div>
-  			<div id="boton-dj"><a href="paso_2_Creamfields.php"><img src="images/botones/seleccionar_artista.png" /></a></div>
+  			<div id="boton-dj"><a href="#" id="flipToRecover" class="flipLink"><img src="images/botones/seleccionar_artista.png" /></a></div>
 			</div>
 			
 			<div id="BIO-calvin" class="bios">
@@ -136,14 +169,14 @@ En Marzo de este año tuvo el privilegio de ser invitado por la BBC Radio 1, par
   			<div id="descripcion-dj">Este músico, productor  cantante y  letrista escocés lleva más de 12 años haciendo música, pero ha sido durante este último tiempo que se ha transformado  en una figura imperdible de cualquier show en el que se presente alrededor del mundo. 
 Su álbum debut  “I Created Disco” fue lanzado en 2007  y dos de los singles que incluía “Acceptable in the 80's” y “The Girls”  ingresaron al Top 10 del Reino Unido.
 </div>
-  			<div id="boton-dj"><a href="paso_2_Creamfields.php"><img src="images/botones/seleccionar_artista.png" /></a></div>
+  			<div id="boton-calvin"><a href="#" id="flipToRecover" class="flipLink"><img  src="images/botones/seleccionar_artista.png" /></a></div>
 			</div>
 			
 			<div id="BIO-david" class="bios">
 			<div id="nombre-dj">David Guetta</div>
 			<div id="foto-dj"><img src="images/fotosdjs-bio/david-guetta.png" /></div>
   			<div id="descripcion-dj">Con más de 10 años de carrera, Guetta siempre ha sido un pionero. Se ha mantenido al frente del desarrollo de la música electrónica en todo momento, manteniendo una colaboración constante con artistas de la envergadura de Michael Jackson, Fergie, Rihanna, 50 Cent, Kylie Minogue, Madonna, Nervo, Usher, además de bandas como The Black Eyed Peas y LMFAO.</div>
-  			<div id="boton-dj"><a href="paso_2_Creamfields.php"><img src="images/botones/seleccionar_artista.png" /></a></div>
+  			<div id="boton-david"><a href="#" id="flipToRecover" class="flipLink"><img src="images/botones/seleccionar_artista.png" /></a></div>
 			</div>
 			
 			<div id="BIO-fedde" class="bios">
