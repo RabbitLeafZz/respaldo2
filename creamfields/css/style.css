@@ -8,7 +8,41 @@
 
 
 
-/* CSS para el efecto de giro*/
+#nombre-dj{
+	margin-top:15px;
+font-size: 2.5em;
+
+}
+
+#boton-dj{
+	position:relative;
+	display:block;
+margin-top: 4px;
+margin-right:20px;	
+}
+
+#descripcion-dj{
+margin: 5 auto;
+width:210px;
+margin-left: 5px:
+margin-right: 5px;
+margin-top: -10px;
+border:none;
+text-align: left;
+font-size:0.8em;
+padding:0;	
+line-height:15px;
+}
+
+.bottom{
+position:absolute;
+	
+}
+
+#foto-david{
+startEffect : transparent; 
+hoverEffect : boxRainGrowReverse;	
+}
 
 #main {
 	
@@ -439,44 +473,6 @@ font-family:creamfields;
    margin-left: 547px;
   margin-top: -359px;
 }
-
-
-
-#nombre-dj{
-	margin-top:15px;
-font-size: 2.5em;
-
-}
-
-#boton-dj{
-	position:relative;
-	display:block;
-margin-top: 4px;
-margin-right:20px;	
-}
-
-#descripcion-dj{
-margin: 5 auto;
-width:210px;
-margin-left: 5px:
-margin-right: 5px;
-margin-top: -10px;
-border:none;
-text-align: left;
-font-size:0.8em;
-padding:0;	
-line-height:15px;
-}
-
-.bottom{
-position:absolute;
-	
-}
-
-
-
-
-
 
 #alex img {
   	

@@ -49,8 +49,8 @@ if ($user) {
     </head>
     <body>
                <?php if ($user): ?>
-                <div id="start-paso2"><a href="paso_3_Creamfields.php"><img src="images/finalizar.png" /></a></div>
-                <!-- <div id="start-2-paso2"><a href="paso_3_Creamfields.php"><img src="images/logo-1.png" /></a></div> -->
+                <div id="continuar"><a href="paso_3_Creamfields.php"><img src="images/botones/continuar.png" /></a></div>
+                <div id="modificar"><a href="paso_3_Creamfields.php"><img src="images/botones/modificar.png" /></a></div>
             <?php else: ?>
                 <div id="like">
                     Ingresa a Facebook

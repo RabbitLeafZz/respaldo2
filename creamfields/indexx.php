@@ -61,8 +61,7 @@ if ($user) {
     </head>
     <body>	
             <?php if ($user): ?>
-                <div id="start-index"><a href="paso_1_Creamfields2.php"><img src="images/start.png" /></a></div>
-                <div id="start-2-index"><a href="paso_1_Creamfields2.php"><img src="images/logo-1.png" /></a></div>
+                <div id="start-index"><a href="paso_1_Creamfields2.php"><img src="images/botones/comenzar.png" /></a></div>
             <?php else: ?>
                 <div id="like">
                     Ingresa a Facebook

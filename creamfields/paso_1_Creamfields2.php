@@ -27,7 +27,7 @@ if ($user) {
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="css/reset.css" rel="stylesheet" type="text/css" />
         <link href="css/MyFontsWebfontsKit.css" rel="stylesheet" type="text/css" />
-        
+                
         <style>
             body {
                 background: url(images/micreamfields02.png) no-repeat center top;
@@ -35,14 +35,19 @@ if ($user) {
         </style>
         <link href="css/style.css" rel="stylesheet" type="text/css" />
         <script src="js/jquery-1.7.2.min.js"></script>
+        
+        
         <script>
         function toggleLayer( whichLayer )
 		{
 		  $('.bios').hide();
 		  $('#'+whichLayer).show();
+		  		  
 		}
         </script>
         
+        
+     
         <script>
         /*jQuery 1.7*/
 		$(document).on('ready', function() {
@@ -317,6 +322,8 @@ if ($user) {
        					 });
 					});
         </script>
+       
+		
     </head>
     <body>
     
@@ -326,7 +333,7 @@ if ($user) {
 			<div id="marciano"><a href="javascript:toggleLayer('BIO-marciano');" ><img class="bottom" src="images/boxes/marciano.png" /><img class="top" src="images/boxes-2/MARCIANO.png" /></a></div>
 			<div id="calvin"><a href="javascript:toggleLayer('BIO-calvin');" ><img class="bottom" src="images/boxes/calvin.png" /><img class="top" src="images/				boxes-2/CALVIN.png" /></a></div>
 			<div id="david"><a href="javascript:toggleLayer('BIO-david');" ><img class="bottom" src="images/boxes/david.png" /><img class="top" src="images/				boxes-2/DAVID.png" /></a></div>
-			<div id="infected"><a href="javascript:toggleLayer('BIO-infected');" ><img  src="images/boxes/infected.png" /></a></div>
+			<div id="infected"><a href="javascript:toggleLayer('BIO-infected');" ><img class="bottom" src="images/boxes/infected.png" /><img class="top" src="images/				boxes-2/INFECTED.png" /></a></div>
  		</div>
 
 		<div id="clubroom">
@@ -433,7 +440,7 @@ if ($user) {
   			</div>
   			
   			<div id="BIO-tweeter" class="bios">
-				<div id="nombre-dj">Pia Sotomayor</div>
+				<div id="nombre-dj">Tweeter</div>
 				<div id="foto-dj"><img src="images/fotosdjs-bio/logo-1.png" /></div>
   				<div id="descripcion-dj"></div>
   				<div id="boton-tweeter"><a href="#" id="flipToRecover" class="flipLink"><img src="images/botones/seleccionar_artista.png" /></a></div>
@@ -541,7 +548,7 @@ if ($user) {
 			
 			<div id="BIO-david" class="bios">
 				<div id="nombre-dj">David Guetta</div>
-				<div id="foto-dj"><img src="images/fotosdjs-bio/david-guetta.png" /></div>
+				<div id="foto-dj"><img id="foto-david" src="images/fotosdjs-bio/david-guetta.png" /></div>
   				<div id="descripcion-dj">Con más de 10 años de carrera, Guetta siempre ha sido un pionero. Se ha mantenido al frente del desarrollo de la música 				electrónica en todo momento, manteniendo una colaboración constante con artistas de la envergadura de Michael Jackson, Fergie, Rihanna, 50 Cent, 				Kylie Minogue, Madonna, Nervo, Usher, además de bandas como The Black Eyed Peas y LMFAO.</div>
   				<div id="boton-david"><a href="#" id="flipToRecover" class="flipLink"><img src="images/botones/seleccionar_artista.png" /></a></div>
 			</div>
