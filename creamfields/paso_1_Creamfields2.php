@@ -64,6 +64,22 @@ if ($user) {
                     seleccionados.push(artista);
                   }
                 });
+
+          $('#continuar').click(function() {
+            var jObject={};
+              for(i in seleccionados)
+              {
+                jObject[i] = seleccionados[i];
+              }
+
+              jObject= JSON.stringify(jObject);
+              $.ajax({
+                type:'post',
+                cache:false,
+                url:"guardar_datos.php",
+                data:{jObject:  jObject}
+              });
+          });
         });
       </script> 
        
@@ -72,52 +88,52 @@ if ($user) {
     <body>
     
 		<div id="main">
-  			<div id="alex" ><a href="javascript:toggleLayer('BIO-alex');" ><img class="bottom" src="images/boxes/alex.png" /><img class="top" src="images/boxes-2/			alex.png" /></a></div>
-			<div id="matanza"><a href="javascript:toggleLayer('BIO-matanza');" ><img class="bottom" src="images/boxes/matanza.png" /><img class="top" src="images/			boxes-2/MATANZA.png" /></a></div>
-			<div id="marciano"><a href="javascript:toggleLayer('BIO-marciano');" ><img class="bottom" src="images/boxes/marciano.png" /><img class="top" src="images/boxes-2/MARCIANO.png" /></a></div>
-			<div id="calvin"><a href="javascript:toggleLayer('BIO-calvin');" ><img class="bottom" src="images/boxes/calvin.png" /><img class="top" src="images/				boxes-2/CALVIN.png" /></a></div>
-			<div id="david"><a href="javascript:toggleLayer('BIO-david');" ><img class="bottom" src="images/boxes/david.png" /><img class="top" src="images/				boxes-2/DAVID.png" /></a></div>
-			<div id="infected"><a href="javascript:toggleLayer('BIO-infected');" ><img class="bottom" src="images/boxes/infected.png" /><img class="top" src="images/				boxes-2/INFECTED.png" /></a></div>
+  			<div id="alex" ><a href="javascript:toggleLayer('BIO-alex');" ><img class="bottom" src="images/boxes/alex.png" /><img class="top" src="images/boxes-2/alex.png" /></a></div>
+			<div id="matanza"><a href="javascript:toggleLayer('BIO-matanza');" ><img class="bottom" src="images/boxes/matanza.png" /><img class="top" src="images/boxes-2/matanza.png" /></a></div>
+			<div id="marciano"><a href="javascript:toggleLayer('BIO-marciano');" ><img class="bottom" src="images/boxes/marciano.png" /><img class="top" src="images/boxes-2/marciano.png" /></a></div>
+			<div id="calvin"><a href="javascript:toggleLayer('BIO-calvin');" ><img class="bottom" src="images/boxes/calvin.png" /><img class="top" src="images/boxes-2/calvin.png" /></a></div>
+			<div id="david"><a href="javascript:toggleLayer('BIO-david');" ><img class="bottom" src="images/boxes/david.png" /><img class="top" src="images/boxes-2/david.png" /></a></div>
+			<div id="infected"><a href="javascript:toggleLayer('BIO-infected');" ><img class="bottom" src="images/boxes/infected.png" /><img class="top" src="images/boxes-2/infected.png" /></a></div>
  		</div>
 
 		<div id="clubroom">
-  			<div id="felipe"><a href="javascript:toggleLayer('BIO-felipe');" ><img class="bottom" src="images/boxes/felipevenegas.png" /><img class="top" src="images/boxes-2/FELIPE.png" /></a></div>
-			<div id="butano"><a href="javascript:toggleLayer('BIO-butano');"> <img class="bottom" src="images/boxes/butano.png" /><img class="top" src="images/boxes-2/BUTANO.png" /></a></div>
-			<div id="mathias"><a href="javascript:toggleLayer('BIO-mathias');" ><img class="bottom" src="images/boxes/mathias.png" /><img class="top" src="images/boxes-2/MATHIAS.png" /></a></div>
-			<div id="solomun"><a href="javascript:toggleLayer('BIO-solomun');" ><img class="bottom" src="images/boxes/solomun.png" /><img class="top" src="images/boxes-2/SOLOMUN.png" /></a></div>
-			<div id="art"><a href="javascript:toggleLayer('BIO-art');" ><img class="bottom" src="images/boxes/art.png" /><img class="top" src="images/boxes-2/ART.png" /></a></div>
-			<div id="jaime"><a href="javascript:toggleLayer('BIO-jaime');" ><img class="bottom" src="images/boxes/jaime.png" /><img class="top" src="images/boxes-2/JAIME.png" /></a></div>
+  			<div id="felipe"><a href="javascript:toggleLayer('BIO-felipe');" ><img class="bottom" src="images/boxes/felipevenegas.png" /><img class="top" src="images/boxes-2/felipe.png" /></a></div>
+			<div id="butano"><a href="javascript:toggleLayer('BIO-butano');"> <img class="bottom" src="images/boxes/butano.png" /><img class="top" src="images/boxes-2/butano.png" /></a></div>
+			<div id="mathias"><a href="javascript:toggleLayer('BIO-mathias');" ><img class="bottom" src="images/boxes/mathias.png" /><img class="top" src="images/boxes-2/mathias.png" /></a></div>
+			<div id="solomun"><a href="javascript:toggleLayer('BIO-solomun');" ><img class="bottom" src="images/boxes/solomun.png" /><img class="top" src="images/boxes-2/solomun.png" /></a></div>
+			<div id="art"><a href="javascript:toggleLayer('BIO-art');" ><img class="bottom" src="images/boxes/art.png" /><img class="top" src="images/boxes-2/art.png" /></a></div>
+			<div id="jaime"><a href="javascript:toggleLayer('BIO-jaime');" ><img class="bottom" src="images/boxes/jaime.png" /><img class="top" src="images/boxes-2/jaime.png" /></a></div>
  		</div>
 
 		<div id="alternative">
-  			<div id="rodrigo"><a href="javascript:toggleLayer('BIO-rodrigo');" ><img class="bottom" src="images/boxes/rodrigo.png" /><img class="top" src="images/boxes-2/RODRIGO.png" /></a></div>
-			<div id="marcos"><a href="javascript:toggleLayer('BIO-marcos');" ><img class="bottom" src="images/boxes/marcos.png" /><img class="top" src="images/boxes-2/MARCOS.png" /></a></div>
-			<div id="michael"><a href="javascript:toggleLayer('BIO-michael');" ><img class="bottom" src="images/boxes/michael.png" /><img class="top" src="images/boxes-2/MICHAEL.png" /></a></div>
-			<div id="nervo"><a href="javascript:toggleLayer('BIO-nervo');" ><img class="bottom" src="images/boxes/nervo.png" /><img class="top" src="images/boxes-2/NERVO.png" /></a></div>
-			<div id="alesso"><a href="javascript:toggleLayer('BIO-alesso');" ><img class="bottom" src="images/boxes/alesso.png" /><img class="top" src="images/boxes-2/ALESSO.png" /></a></div>
-			<div id="fedde"><a href="javascript:toggleLayer('BIO-fedde');" ><img class="bottom" src="images/boxes/fedde.png" /><img class="top" src="images/boxes-2/FEDDE.png" /></a></div>
+  			<div id="rodrigo"><a href="javascript:toggleLayer('BIO-rodrigo');" ><img class="bottom" src="images/boxes/rodrigo.png" /><img class="top" src="images/boxes-2/rodrigo.png" /></a></div>
+			<div id="marcos"><a href="javascript:toggleLayer('BIO-marcos');" ><img class="bottom" src="images/boxes/marcos.png" /><img class="top" src="images/boxes-2/marcos.png" /></a></div>
+			<div id="michael"><a href="javascript:toggleLayer('BIO-michael');" ><img class="bottom" src="images/boxes/michael.png" /><img class="top" src="images/boxes-2/michael.png" /></a></div>
+			<div id="nervo"><a href="javascript:toggleLayer('BIO-nervo');" ><img class="bottom" src="images/boxes/nervo.png" /><img class="top" src="images/boxes-2/nervo.png" /></a></div>
+			<div id="alesso"><a href="javascript:toggleLayer('BIO-alesso');" ><img class="bottom" src="images/boxes/alesso.png" /><img class="top" src="images/boxes-2/alesso.png" /></a></div>
+			<div id="fedde"><a href="javascript:toggleLayer('BIO-fedde');" ><img class="bottom" src="images/boxes/fedde.png" /><img class="top" src="images/boxes-2/fedde.png" /></a></div>
  		</div>
 
 		<div id="cream">
-  			<div id="pia"><a href="javascript:toggleLayer('BIO-pia');" ><img class="bottom" src="images/boxes/pia.png" /><img class="top" src="images/boxes-2/PIA.png" /></a></div>
-			<div id="tweeter"><a href="javascript:toggleLayer('BIO-tweeter');" ><img class="bottom" src="images/boxes/tweeter.png" /><img class="top" src="images/boxes-2/TWEETER.png" /></a></div>
-			<div id="guti"><a href="javascript:toggleLayer('BIO-guti');" ><img class="bottom" src="images/boxes/guti.png" /><img class="top" src="images/boxes-2/GUTI.png" /></a></div>
-			<div id="reboot"><a href="javascript:toggleLayer('BIO-reboot');" ><img class="bottom" src="images/boxes/reboot.png" /><img class="top" src="images/boxes-2/REBOOT.png" /></a></div>
-			<div id="steve"><a href="javascript:toggleLayer('BIO-steve');" ><img class="bottom" src="images/boxes/steve.png" /><img class="top" src="images/boxes-2/STEVE.png" /></a></div>
-			<div id="james"><a href="javascript:toggleLayer('BIO-james');" ><img class="bottom" src="images/boxes/james.png" /><img class="top" src="images/boxes-2/JAMES.png" /></a></div>
+  			<div id="pia"><a href="javascript:toggleLayer('BIO-pia');" ><img class="bottom" src="images/boxes/pia.png" /><img class="top" src="images/boxes-2/pia.png" /></a></div>
+			<div id="tweeter"><a href="javascript:toggleLayer('BIO-tweeter');" ><img class="bottom" src="images/boxes/tweeter.png" /><img class="top" src="images/boxes-2/tweeter.png" /></a></div>
+			<div id="guti"><a href="javascript:toggleLayer('BIO-guti');" ><img class="bottom" src="images/boxes/guti.png" /><img class="top" src="images/boxes-2/guti.png" /></a></div>
+			<div id="reboot"><a href="javascript:toggleLayer('BIO-reboot');" ><img class="bottom" src="images/boxes/reboot.png" /><img class="top" src="images/boxes-2/reboot.png" /></a></div>
+			<div id="steve"><a href="javascript:toggleLayer('BIO-steve');" ><img class="bottom" src="images/boxes/steve.png" /><img class="top" src="images/boxes-2/steve.png" /></a></div>
+			<div id="james"><a href="javascript:toggleLayer('BIO-james');" ><img class="bottom" src="images/boxes/james.png" /><img class="top" src="images/boxes-2/james.png" /></a></div>
  		</div>
 			
 		<div id="zero">
-  			<div id="javiersuka"><a href="javascript:toggleLayer('BIO-javiersuka');" ><img class="bottom" src="images/boxes/javiersuka.png" /><img class="top" src="images/boxes-2/JAVIERSUKA.png" /></a></div>
-			<div id="nicocrespo"><a href="javascript:toggleLayer('BIO-nicocrespo');" ><img class="bottom" src="images/boxes/nicocrespo.png" /><img class="top" src="images/boxes-2/NICOCRESPO.png" /></a></div>
-			<div id="fernandomujica"><a href="javascript:toggleLayer('BIO-fernandomujica');" ><img class="bottom" src="images/boxes/fernandomujica.png" /><img class="top" src="images/boxes-2/FERNANDOMUJICA.png" /></a></div>
-			<div id="rodrigoguendelman"><a href="javascript:toggleLayer('BIO-rodrigoguendelman');" ><img class="bottom" src="images/boxes/rodrigoguendelman.png" /><img class="top" src="images/boxes-2/RODRIGOGUENDELMAN.png" /></a></div>
-			<div id="fernandaarrau"><a href="javascript:toggleLayer('BIO-fernandaarrau');" ><img class="bottom" src="images/boxes/fernandaarrau.png" /><img class="top" src="images/boxes-2/FERNANDAARRAU.png" /></a></div>
-			<div id="vives"><a href="javascript:toggleLayer('BIO-vives');" ><img class="bottom" src="images/boxes/vives.png" /><img class="top" src="images/boxes-2/VIVES.png" /></a></div>
-			<div id="franciscoparra"><a href="javascript:toggleLayer('BIO-franciscoparra');" ><img class="bottom" src="images/boxes/franciscoparra.png" /><img class="top" src="images/boxes-2/FRANCISCOPARRA.png" /></a></div>
-			<div id="gustavo"><a href="javascript:toggleLayer('BIO-gustavo');" ><img class="bottom" src="images/boxes/gustavoallendes.png" /><img class="top" src="images/boxes-2/GUSTAVO.png" /></a></div>
-			<div id="ignacio"><a href="javascript:toggleLayer('BIO-ignacio');" ><img class="bottom" src="images/boxes/ignacioaguirre.png" /><img class="top" src="images/boxes-2/IGNACIO.png" /></a></div>
-			<div id="phillipe"><a href="javascript:toggleLayer('BIO-phillipe');" ><img class="bottom" src="images/boxes/phillipetruan.png" /><img class="top" src="images/boxes-2/PHILLIPE.png" /></a></div>
+  			<div id="javiersuka"><a href="javascript:toggleLayer('BIO-javiersuka');" ><img class="bottom" src="images/boxes/javiersuka.png" /><img class="top" src="images/boxes-2/javiersuka.png" /></a></div>
+			<div id="nicocrespo"><a href="javascript:toggleLayer('BIO-nicocrespo');" ><img class="bottom" src="images/boxes/nicocrespo.png" /><img class="top" src="images/boxes-2/nicocrespo.png" /></a></div>
+			<div id="fernandomujica"><a href="javascript:toggleLayer('BIO-fernandomujica');" ><img class="bottom" src="images/boxes/fernandomujica.png" /><img class="top" src="images/boxes-2/fernandomujica.png" /></a></div>
+			<div id="rodrigoguendelman"><a href="javascript:toggleLayer('BIO-rodrigoguendelman');" ><img class="bottom" src="images/boxes/rodrigoguendelman.png" /><img class="top" src="images/boxes-2/rodrigoguendelman.png" /></a></div>
+			<div id="fernandaarrau"><a href="javascript:toggleLayer('BIO-fernandaarrau');" ><img class="bottom" src="images/boxes/fernandaarrau.png" /><img class="top" src="images/boxes-2/fernandaarrau.png" /></a></div>
+			<div id="vives"><a href="javascript:toggleLayer('BIO-vives');" ><img class="bottom" src="images/boxes/vives.png" /><img class="top" src="images/boxes-2/vives.png" /></a></div>
+			<div id="franciscoparra"><a href="javascript:toggleLayer('BIO-franciscoparra');" ><img class="bottom" src="images/boxes/franciscoparra.png" /><img class="top" src="images/boxes-2/franciscoparra.png" /></a></div>
+			<div id="gustavo"><a href="javascript:toggleLayer('BIO-gustavo');" ><img class="bottom" src="images/boxes/gustavoallendes.png" /><img class="top" src="images/boxes-2/gustavo.png" /></a></div>
+			<div id="ignacio"><a href="javascript:toggleLayer('BIO-ignacio');" ><img class="bottom" src="images/boxes/ignacioaguirre.png" /><img class="top" src="images/boxes-2/ignacio.png" /></a></div>
+			<div id="phillipe"><a href="javascript:toggleLayer('BIO-phillipe');" ><img class="bottom" src="images/boxes/phillipetruan.png" /><img class="top" src="images/boxes-2/phillipe.png" /></a></div>
  		</div>
 			
 			<div id="BIO-alex" class="bios">
@@ -401,7 +417,7 @@ if ($user) {
 			</div>
 			
 			
-			
+			<div id="start-paso1"><a href="#"><img id="continuar" src="images/botones/continuar.png" /></a></div>
 	  <?php if ($user): ?>
                 <div id="start-paso1"><a href="paso_2_Creamfields.php"><img src="images/botones/continuar.png" /></a></div>
             <?php else: ?>
