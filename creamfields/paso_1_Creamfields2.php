@@ -45,8 +45,7 @@ if ($user) {
 		  		  
 		}
         </script>
-        
-        
+       
      
         <script>
         /*jQuery 1.7*/
@@ -528,6 +527,7 @@ if ($user) {
 				En Marzo de este año tuvo el privilegio de ser invitado por la BBC Radio 1, para mezclar en el prestigioso espacio radial denominado Essential 					Mix
 			</div>
   				<div id="boton-alesso"><a href="#" id="flipToRecover" class="flipLink"><img src="images/botones/seleccionar_artista.png" /></a></div>
+  				<iframe width="100%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F56979084&show_artwork=true"></iframe>
 			</div>
 			
 			<div id="BIO-art" class="bios">
@@ -535,6 +535,7 @@ if ($user) {
 				<div id="foto-dj"><img src="images/fotosdjs-bio/art-departament.png" /></div>
   				<div id="descripcion-dj">Este proyecto musical nace del encuentro de Kenny Glasgow veterano de la escena electrónica mundial y el joven Jonny 					White. Uno desde la vereda de la experiencia y el otro desde la esquina de la frescura y la juventud, se juntan para plantear música dentro de la 				escena del House desde un punto de vista menos comercial.</div>
   			<div id="boton-art"><a href="#" id="flipToRecover" class="flipLink"><img src="images/botones/seleccionar_artista.png" /></a></div>
+  			<iframe width="100%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F26128152&show_artwork=true"></iframe>
 			</div>
 			
 			<div id="BIO-calvin" class="bios">
@@ -544,6 +545,7 @@ if ($user) {
 				Su álbum debut  “I Created Disco” fue lanzado en 2007  y dos de los singles que incluía “Acceptable in the 80's” y “The Girls”  ingresaron al Top 1				0 del Reino Unido.
 				</div>
   				<div id="boton-calvin"><a href="#" id="flipToRecover" class="flipLink"><img  src="images/botones/seleccionar_artista.png" /></a></div>
+  				<iframe width="100%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F1072339&show_artwork=true"></iframe>
 			</div>
 			
 			<div id="BIO-david" class="bios">
@@ -551,6 +553,7 @@ if ($user) {
 				<div id="foto-dj"><img id="foto-david" src="images/fotosdjs-bio/david-guetta.png" /></div>
   				<div id="descripcion-dj">Con más de 10 años de carrera, Guetta siempre ha sido un pionero. Se ha mantenido al frente del desarrollo de la música 				electrónica en todo momento, manteniendo una colaboración constante con artistas de la envergadura de Michael Jackson, Fergie, Rihanna, 50 Cent, 				Kylie Minogue, Madonna, Nervo, Usher, además de bandas como The Black Eyed Peas y LMFAO.</div>
   				<div id="boton-david"><a href="#" id="flipToRecover" class="flipLink"><img src="images/botones/seleccionar_artista.png" /></a></div>
+  				<iframe width="100%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F								%2Fapi.soundcloud.com%2Ftracks%2F7816989&show_artwork=true"></iframe>
 			</div>
 			
 			<div id="BIO-fedde" class="bios">
@@ -561,6 +564,7 @@ if ($user) {
 				El 2011 otro hit de Fedde dio la vuelta al mundo al realizar el remix de la canción Paradise de Coldplay con la cual ya ha ganado varios 						reconocimientos.
 				</div>
   				<div id="boton-fedde"><a href="#" id="flipToRecover" class="flipLink"><img src="images/botones/seleccionar_artista.png" /></a></div>
+  				<iframe width="100%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F62913354&show_artwork=true"></iframe>
 			</div>
 			
 			<div id="BIO-guti" class="bios">
@@ -577,6 +581,7 @@ if ($user) {
  				Su primer disco The Gathering  fue lanzado en 1999, pero fue tanta la energía de este dúo que prácticamente editaron un álbum por año. Fue así como 				llegaron Classical Mushroom  el 2000 y  BP Empire el 2001. 
 				</div>
   				<div id="boton-infected"><a href="#" id="flipToRecover" class="flipLink"><img src="images/botones/seleccionar_artista.png" /></a></div>
+  				<iframe width="100%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F45979565&show_artwork=true"></iframe>
 			</div>
 			
 			<div id="BIO-james" class="bios">
@@ -595,6 +600,7 @@ if ($user) {
 				<div id="foto-dj"><img src="images/fotosdjs-bio/jamie-jones.png" /></div>
   				<div id="descripcion-dj">Conocido como “Golden Boy”,  Jamie Jones no deja nunca de sorprender y estar a la vanguardia a nivel musical y 						promocional, siendo uno de los artistas del último tiempo más  reconocido a nivel mundial por su  estilo y sonido únicos, tanto a la hora de 					remezclar, como al producir sus temas, combinando  el mejor Thech, con funk, disco y voces sacadas del house, logrando una música con mucho Groove 				que invita a moverse y bailar. </div>
   				<div id="boton-jaime"><a href="#" id="flipToRecover" class="flipLink"><img src="images/botones/seleccionar_artista.png" /></a></div>
+  				<iframe width="100%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F43482613&show_artwork=true"></iframe>
 			</div>
 			
 			<div id="BIO-mathias" class="bios">
@@ -604,6 +610,7 @@ if ($user) {
 				En sus estilos incluye ritmos como el Funky, Freaky, Dashing, Dub, Slamming, que son enriquecidos por percusiones africanas y sudamericanas.
 				</div>
   				<div id="boton-mathias"><a href="#" id="flipToRecover" class="flipLink"><img  src="images/botones/seleccionar_artista.png" /></a></div>
+  				<iframe width="100%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F62460349&show_artwork=true"></iframe>
 			</div>
 			</div>
 			
@@ -614,6 +621,7 @@ if ($user) {
 				Con este último las hermanas Mim y Liv Nervo escribieron la canción ganadora de un Grammy “When Love Takes Over” .
 				</div>
   				<div id="boton-nervo"><a href="#" id="flipToRecover" class="flipLink"><img src="images/botones/seleccionar_artista.png" /></a></div>
+  				<iframe width="100%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F19480670&show_artwork=true"></iframe>
 			</div>
 			
 			<div id="BIO-reboot" class="bios">
@@ -632,6 +640,7 @@ if ($user) {
 				El croata con sede en Hamburgo  ha jugado un papel importante en la redefinición de la música House europea en los últimos años a través de 					producciones, remixes y DJ’s de su sello Diynamyc.
 				</div>
   				<div id="boton-solomun"><a href="#" id="flipToRecover" class="flipLink"><img  src="images/botones/seleccionar_artista.png" /></a></div>
+  			<iframe width="100%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F61967038&show_artwork=true"></iframe>
 	
   			</div>
 			
