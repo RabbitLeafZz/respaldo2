@@ -1,7 +1,7 @@
 <?php
  
 if (array_key_exists('img',$_REQUEST)) {
-    echo $_REQUEST['img'];
+    //echo $_REQUEST['img'];
  
     // convierte la imagen recibida en base64
     // Eliminamos los 22 primeros caracteres, que 
@@ -18,5 +18,7 @@ if (array_key_exists('img',$_REQUEST)) {
         $fp = fopen($file, 'w');
         fwrite($fp, $imgData);
         fclose($fp);
-}
+    }
+
+    echo $file;
 ?>

@@ -40,7 +40,6 @@ session_start();
         <script src="js/jquery.queryloader2.js"></script>
         <script>
             var img = new Image();
-            var imagen = new Image();
             $(document).ready(function() {
                 $("body").queryLoader2({ 
                     backgroundColor: '#FFF', 
@@ -59,11 +58,17 @@ session_start();
 
                 <?php if (isset($_SESSION['seleccion'])) {
                     foreach ($_SESSION['seleccion'] as $key => $value) {
-                        echo "imagen = new Image();\n";
-                        echo "imagen.onload = function() { ctx.drawImage(imagen, ".$value['x'].", ".$value['y']."); }\n";
-                        echo "imagen.src = '" . $value['url'] . "';\n";
+                        echo "var imagen".$key." = new Image();\n";
+                        echo "imagen".$key.".onload = function() { ctx.drawImage(imagen".$key.", ".$value['x'].", ".$value['y']."); }\n";
+                        echo "imagen".$key.".src = '" . $value['url'] . "';\n";
                     }
                 } ?>
+
+                $('#continuar').click(function() {
+                    $.post('guardar_imagen.php',{img : canvas.toDataURL(), nombre: "prueba.png"}, function() {
+                        window.location = "upload/prueba.png";
+                    });
+                });
             });
         </script>
     
@@ -74,7 +79,7 @@ session_start();
             <canvas id="horario" height="370" width="530">
             </canvas>
         </div>
-
+                <div id="continuar"><a href="#"><img src="images/botones/continuar.png" /></a></div>
                <?php if ($user): ?>
                 <div id="continuar"><a href="paso_3_Creamfields.php"><img src="images/botones/continuar.png" /></a></div>
                 <div id="modificar"><a href="paso_3_Creamfields.php"><img src="images/botones/modificar.png" /></a></div>

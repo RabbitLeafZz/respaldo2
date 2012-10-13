@@ -77,7 +77,11 @@ if ($user) {
                 type:'post',
                 cache:false,
                 url:"guardar_datos.php",
-                data:{jObject:  jObject}
+                data:{jObject:  jObject},
+                success: function() {
+                  setTimeout ('window.location = "paso_2_Creamfields.php";', 2000); 
+                  
+                }
               });
           });
         });
