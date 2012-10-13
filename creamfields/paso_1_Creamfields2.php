@@ -35,20 +35,27 @@ if ($user) {
         </style>
         <link href="css/style.css" rel="stylesheet" type="text/css" />
         <script src="js/jquery-1.7.2.min.js"></script>
-        
-        
+        <script src="js/jquery.queryloader2.js"></script>
+
         <script>
         function toggleLayer( whichLayer )
-		{
-		  $('.bios').hide();
-		  $('#'+whichLayer).show();
-		  		  
-		}
+    		{
+    		  $('.bios').hide();
+    		  $('#'+whichLayer).show();
+    		  		  
+    		}
         </script>
       
       <script>
       var seleccionados = new Array();
         $(document).on('ready', function() {
+          <?php if (isset($_SESSION['seleccion'])) {
+              foreach ($_SESSION['seleccion'] as $key => $value) {
+                  echo "$('#".$value['artista']." img.bottom').toggleClass('transparent');\n";
+                  echo "seleccionados.push('".$value['artista']."');\n";
+              }
+          } ?>
+
          $("div[id*='boton-']").on('click', function() {
                   var artista = $(this).attr('id');
                   artista = artista.substring(6);
@@ -78,9 +85,10 @@ if ($user) {
                 cache:false,
                 url:"guardar_datos.php",
                 data:{jObject:  jObject},
-                success: function() {
-                  setTimeout ('window.location = "paso_2_Creamfields.php";', 2000); 
-                  
+                success: function(data) {
+                  if (data == 'OK') {
+                    setTimeout ('window.location = "paso_2_Creamfields.php";', 3000); 
+                  }                  
                 }
               });
           });
@@ -421,9 +429,8 @@ if ($user) {
 			</div>
 			
 			
-			<div id="start-paso1"><a href="#"><img id="continuar" src="images/botones/continuar.png" /></a></div>
 	  <?php if ($user): ?>
-                <div id="start-paso1"><a href="paso_2_Creamfields.php"><img src="images/botones/continuar.png" /></a></div>
+                <div id="start-paso1"><a href="#"><img id="continuar" src="images/botones/continuar.png" /></a></div>
             <?php else: ?>
                 <div id="like-paso1">
                     Ingresa a Facebook

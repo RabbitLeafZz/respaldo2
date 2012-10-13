@@ -155,5 +155,5 @@
     }
     session_start();
     $_SESSION['seleccion'] = $final;
-    print_r($_SESSION['seleccion']);
+    echo "OK"
 ?>

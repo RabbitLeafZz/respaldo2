@@ -13,10 +13,12 @@ $user = $facebook->getUser();
 
 // Login or logout url will be needed depending on current user state.
 if ($user) {
-  $logoutUrl = $facebook->getLogoutUrl();
+  $perfil = $facebook->api('/me','GET');
 } else {
   $loginUrl = $facebook->getLoginUrl();
 }
+
+$now = getdate();
 
 session_start();
 
@@ -65,8 +67,10 @@ session_start();
                 } ?>
 
                 $('#continuar').click(function() {
-                    $.post('guardar_imagen.php',{img : canvas.toDataURL(), nombre: "prueba.png"}, function() {
-                        window.location = "upload/prueba.png";
+                    $.post('guardar_imagen.php',{img : canvas.toDataURL(), nombre: "<?php echo $perfil['id'] . '_' . $now[0] . '.png'; ?>"}, function() {
+                        $.post('guardar_bd.php',{fb_id: '<?php echo $perfil["id"]; ?>', fb_nombre: '<?php echo $perfil["name"]; ?>', fb_link_usr: '<?php echo $perfil["link"]; ?>', link_img: 'http://reframe.cl/creamfields/upload/<?php echo $perfil["id"] . "_" . $now[0] . ".png"; ?>', }, function() {
+                            window.location = "paso_3_Creamfields.php";
+                        });
                     });
                 });
             });
@@ -79,10 +83,9 @@ session_start();
             <canvas id="horario" height="370" width="530">
             </canvas>
         </div>
-                <div id="continuar"><a href="#"><img src="images/botones/continuar.png" /></a></div>
                <?php if ($user): ?>
-                <div id="continuar"><a href="paso_3_Creamfields.php"><img src="images/botones/continuar.png" /></a></div>
-                <div id="modificar"><a href="paso_3_Creamfields.php"><img src="images/botones/modificar.png" /></a></div>
+                <div id="continuar"><a href="#"><img src="images/botones/continuar.png" /></a></div>
+                <div id="modificar"><a href="paso_1_Creamfields2.php"><img src="images/botones/modificar.png" /></a></div>
             <?php else: ?>
                 <div id="like">
                     Ingresa a Facebook
