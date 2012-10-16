@@ -2028,72 +2028,6 @@ z-index: 1002;
 	top:22px;
 }
 
-input[type=text],input[type=password]{
-	/* The text fields */
-	font: 15px 'Segoe UI',Arial,sans-serif;
-	border: none;
-	background:none;
-	height: 36px;
-	left: 26px;
-	position: absolute;
-	top: 159px;
-	width: 234px;
-	text-indent: 8px;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-	color:#eee;
-	outline:none;
-}
-
-#loginPass{
-	top: 193px;
-}
-
-#recoverEmail{
-	top:194px;
-}
-
-input[type=submit]{
-	
-	/* Submit button */
-	
-	opacity:0.9;
-	position:absolute;
-	top:262px;
-	left:25px;
-	width: 239px;
-	height:36px;
-	cursor:pointer;
-	border-radius:50px;
-	box-shadow:0 1px 1px #888;
-	border:none;
-	color:#fff;
-	font:14px/36px 'Segoe UI Light','Segoe UI',Arial,sans-serif;
-	
-	/* CSS3 Gradients */
-	
-	background-image: linear-gradient(bottom, rgb(80,102,127) 50%, rgb(87,109,136) 50%, rgb(106,129,155) 100%);
-	background-image: -o-linear-gradient(bottom, rgb(80,102,127) 50%, rgb(87,109,136) 50%, rgb(106,129,155) 100%);
-	background-image: -moz-linear-gradient(bottom, rgb(80,102,127) 50%, rgb(87,109,136) 50%, rgb(106,129,155) 100%);
-	background-image: -webkit-linear-gradient(bottom, rgb(80,102,127) 50%, rgb(87,109,136) 50%, rgb(106,129,155) 100%);
-	background-image: -ms-linear-gradient(bottom, rgb(80,102,127) 50%, rgb(87,109,136) 50%, rgb(106,129,155) 100%);
-	
-	background-image: -webkit-gradient(
-		linear,
-		left bottom,
-		left top,
-		color-stop(0.5, rgb(80,102,127)),
-		color-stop(0.5, rgb(87,109,136)),
-		color-stop(1, rgb(106,129,155))
-	);
-}
-
-input[type=submit]:hover{
-	opacity:1;
-}
-
-input::-webkit-input-placeholder {
-    color:#eee;
-}
 
 
 
@@ -2635,4 +2569,98 @@ table.graph td img {
 
 #horario {
   margin-top: 140px;
+}
+
+.creamfields_creados {
+  margin-top: 30px;
+}
+
+.creamfields_creados h3 {
+  margin-bottom: 20px;
+  color: #848484;
+  font-size: 10pt;
+}
+
+.creamfields_creados h2 {
+  color: #848484;
+}
+
+.creamfields_creados h2 a {
+  text-decoration: none;
+  color: #0174DF;
+}
+
+#compartido-imagen {
+  margin-top: 100px;
+}
+
+#compartido-imagen h1 {
+  font-size: 20pt;
+  color: #FFF;
+}
+
+#compartido-imagen h1 a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.like {
+  text-align: center;
+  margin-left: 202px;
+}
+
+.comment {
+  margin-top: 50px;
+}
+
+.botones {
+  display: block;
+  margin-top: 241px;
+  text-align: center;
+}
+
+#invitar {
+  width: 480px;
+  height: 31px;
+  margin-left: 165px;
+  cursor: pointer;
+}
+#imprimir {
+  width: 244px;
+  height: 31px;
+  margin-left: 284px;
+  cursor: pointer;
+  margin-top: 7px;
+}
+#mail {
+  width: 315px;
+  height: 31px;
+  margin-left: 246px;
+  cursor: pointer;
+  margin-top: 7px;
+}
+
+#formemail {
+  background-color: #DDD;
+  width: 200px;
+  height: 37px;
+  border-radius: 7px;
+}
+
+.botones2 {
+  margin-top: 11px;
+}
+
+.botones2 * {
+  display: inline-block;
+}
+
+.botones2 #modificar {
+  float: left;
+  margin-left: 20px;
+}
+
+.botones2 #continuar {
+  float: right;
+  margin-right: 20px;
 }

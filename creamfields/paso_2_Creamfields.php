@@ -13,9 +13,9 @@ $user = $facebook->getUser();
 
 // Login or logout url will be needed depending on current user state.
 if ($user) {
-  $perfil = $facebook->api('/me','GET');
+  
 } else {
-  $loginUrl = $facebook->getLoginUrl();
+  header('Location: index.php');
 }
 
 $now = getdate();
@@ -40,6 +40,7 @@ session_start();
         <link href="css/style.css" rel="stylesheet" type="text/css" />
         <script src="js/jquery-1.7.2.min.js"></script>
         <script src="js/jquery.queryloader2.js"></script>
+        <script type="text/javascript" src="js/jquery.blockUI.js" ></script>
         <script>
             var img = new Image();
             $(document).ready(function() {
@@ -67,9 +68,21 @@ session_start();
                 } ?>
 
                 $('#continuar').click(function() {
+                    $.blockUI({
+                      message: 'Guardando tu creamfields...', 
+                      css: { 
+                        border: 'none', 
+                        padding: '15px', 
+                        backgroundColor: '#000', 
+                        '-webkit-border-radius': '10px', 
+                        '-moz-border-radius': '10px', 
+                        opacity: .5, 
+                        color: '#fff' 
+                      } 
+                    });
                     $.post('guardar_imagen.php',{img : canvas.toDataURL(), nombre: "<?php echo $perfil['id'] . '_' . $now[0] . '.png'; ?>"}, function() {
-                        $.post('guardar_bd.php',{fb_id: '<?php echo $perfil["id"]; ?>', fb_nombre: '<?php echo $perfil["name"]; ?>', fb_link_usr: '<?php echo $perfil["link"]; ?>', link_img: 'http://reframe.cl/creamfields/upload/<?php echo $perfil["id"] . "_" . $now[0] . ".png"; ?>', }, function() {
-                            window.location = "paso_3_Creamfields.php";
+                        $.post('guardar_bd.php',{fb_id: '<?php echo $perfil["id"]; ?>', fb_nombre: '<?php echo $perfil["name"]; ?>', fb_link_usr: '<?php echo $perfil["link"]; ?>', link_img: 'http://reframe.cl/creamfields/upload/<?php echo $perfil["id"] . "_" . $now[0] . ".png"; ?>', }, function(data) {
+                            window.location = "paso_3_Creamfields.php?id="+data;
                         });
                     });
                 });
@@ -83,9 +96,11 @@ session_start();
             <canvas id="horario" height="370" width="530">
             </canvas>
         </div>
-               <?php if ($user): ?>
-                <div id="continuar"><a href="#"><img src="images/botones/continuar.png" /></a></div>
-                <div id="modificar"><a href="paso_1_Creamfields2.php"><img src="images/botones/modificar.png" /></a></div>
+            <?php if ($user): ?>
+                <div class="botones2">
+                    <div id="modificar"><a href="paso_1_Creamfields2.php"><img src="images/botones/modificar.png" /></a></div>
+                    <div id="continuar"><a href="#"><img src="images/botones/continuar.png" /></a></div>
+                </div>
             <?php else: ?>
                 <div id="like">
                     Ingresa a Facebook

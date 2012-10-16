@@ -1,6 +1,11 @@
 <?php
 
+if (isset($_GET['id'])) {
+    header('Location: compartido.php?id='.$_GET['id']);
+}
+
 require 'facebook/src/facebook.php';
+require 'conectar.php';
 
 // Create our Application instance (replace this with your appId and secret).
 $facebook = new Facebook(array(
@@ -17,6 +22,9 @@ if ($user) {
 } else {
   $loginUrl = $facebook->getLoginUrl();
 }
+
+// Trae los creamfields creados
+$datos = mysql_query("SELECT * FROM datos ORDER BY id DESC;");
 
 ?>
 
@@ -67,6 +75,16 @@ if ($user) {
                     <a href="<?php echo $loginUrl; ?>">Login</a>
                 </div>
             <?php endif ?>
+        <div class="creamfields_creados">
+            <h1>Creamfields creados por otros</h1>
+            <h3>Pincha en un creamfields para votar por el</h3>
+            <div class="contenido">
+                <?php while ($row = mysql_fetch_assoc($datos)) { ?>
+                    <h2>Creado por <a href="<?php echo $row['fb_link_usr']; ?>"><?php echo $row['fb_nombre']; ?></a></h2>
+                    <a href="http://apps.facebook.com/micreamfields/?id=<?php echo $row['id']; ?>" target="_blank" ><img src="<?php echo $row['link_img']; ?>" /></a>
+                    <hr />
+                <?php } ?>
+            </div>
         </div>
     </body>
 </html>

@@ -20,5 +20,8 @@ if (array_key_exists('img',$_REQUEST)) {
         fclose($fp);
     }
 
+    session_start();
+    $_SESSION['seleccion'] = null;
+
     echo $file;
 ?>
