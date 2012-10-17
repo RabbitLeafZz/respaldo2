@@ -41,49 +41,134 @@
         <script src="js/jquery-1.7.2.min.js"></script>
         <script type="text/javascript" src="js/jquery.queryloader2.js"></script>
         <script type="text/javascript" src="js/jquery.blockUI.js" ></script>
+        <script src="js/jquery.bpopup-0.7.0.min.js"></script>
 
         <script type="text/javascript">
         // Definición array de artistas para match
         var artistas = new Array();
         // Main
-        artistas['alex'] = new Array('pia', 'rodrigo', 'felipe', 'javiersuka');
-        artistas['matanza'] = new Array('butano', 'marcos', 'tweeter', 'nicocrespo', 'mathias', 'michael', 'guti', 'fernandomujica');
-        artistas['marciano'] = new Array('mathias', 'michael', 'guti', 'fernandomujica', 'rodrigoguendelman');
-        artistas['calvin'] = new Array('solomun', 'nervo', 'reboot', 'fernandaarrau', 'vives');
-        artistas['david'] = new Array('art', 'alesso', 'james', 'franciscoparra', 'gustavo');
-        artistas['infected'] = new Array('jaime', 'fedde', 'steve', 'ignacio', 'phillipe');
+        artistas['alex'] = new Array();
+        artistas['alex']['match'] = new Array('pia', 'rodrigo', 'felipe', 'javiersuka');
+        artistas['alex']['img'] = 'images/match/otros.png';
+        artistas['matanza'] = new Array();
+        artistas['matanza']['match'] = new Array('butano', 'marcos', 'tweeter', 'nicocrespo', 'mathias', 'michael', 'guti', 'fernandomujica');
+        artistas['matanza']['img'] = 'images/match/otros.png';
+        artistas['marciano'] = new Array();
+        artistas['marciano']['match'] = new Array('mathias', 'michael', 'guti', 'fernandomujica', 'rodrigoguendelman');
+        artistas['marciano']['img'] = 'images/match/otros.png';
+        artistas['calvin'] = new Array();
+        artistas['calvin']['match'] = new Array('solomun', 'nervo', 'reboot', 'fernandaarrau', 'vives');
+        artistas['calvin']['img'] = 'images/match/calvin.png';
+        artistas['david'] = new Array();
+        artistas['david']['match'] = new Array('art', 'alesso', 'james', 'franciscoparra', 'gustavo');
+        artistas['david']['img'] = 'images/match/david.png';
+        artistas['infected'] = new Array();
+        artistas['infected']['match'] = new Array('jaime', 'fedde', 'steve', 'ignacio', 'phillipe');
+        artistas['infected']['img'] = 'images/match/infected.png';
         // Club Room
-        artistas['pia'] = new Array('alex', 'rodrigo', 'felipe', 'javiersuka');
-        artistas['butano'] = new Array('alex', 'matanza', 'marcos', 'tweeter', 'nicocrespo');
-        artistas['mathias'] = new Array('matanza', 'marciano', 'michael', 'guti', 'fernandomujica', 'rodrigoguendelman');
-        artistas['solomun'] = new Array('calvin', 'nervo', 'reboot', 'fernandaarrau', 'vives');
-        artistas['art'] = new Array('david', 'alesso', 'james', 'franciscoparra', 'gustavo');
-        artistas['jamie'] = new Array('infected', 'fedde', 'steve', 'ignacio', 'phillipe');
+        artistas['pia'] = new Array();
+        artistas['pia']['match'] = new Array('alex', 'rodrigo', 'felipe', 'javiersuka');
+        artistas['pia']['img'] = 'images/match/otros.png';
+        artistas['butano'] = new Array();
+        artistas['butano']['match'] = new Array('alex', 'matanza', 'marcos', 'tweeter', 'nicocrespo');
+        artistas['butano']['img'] = 'images/match/otros.png';
+        artistas['mathias'] = new Array();
+        artistas['mathias']['match'] = new Array('matanza', 'marciano', 'michael', 'guti', 'fernandomujica', 'rodrigoguendelman');
+        artistas['mathias']['img'] = 'images/match/mathias.png';
+        artistas['solomun'] = new Array();
+        artistas['solomun']['match'] = new Array('calvin', 'nervo', 'reboot', 'fernandaarrau', 'vives');
+        artistas['solomun']['img'] = 'images/match/solomun.png';
+        artistas['art'] = new Array();
+        artistas['art']['match'] = new Array('david', 'alesso', 'james', 'franciscoparra', 'gustavo');
+        artistas['art']['img'] = 'images/match/art.png';
+        artistas['jamie'] = new Array();
+        artistas['jamie']['match'] = new Array('infected', 'fedde', 'steve', 'ignacio', 'phillipe');
+        artistas['jamie']['img'] = 'images/match/jamie.png';
         // Alternative
-        artistas['rodrigo'] = new Array('alex', 'pia', 'felipe', 'javiersuka');
-        artistas['marcos'] = new Array('alex', 'matanza', 'butano', 'tweeter', 'nicocrespo');
-        artistas['michael'] = new Array('matanza', 'marciano', 'mathias', 'guti', 'fernandomujica', 'rodrigoguendelman');
-        artistas['nervo'] = new Array('calvin', 'solomun', 'reboot', 'fernandaarrau', 'vives');
-        artistas['alesso'] = new Array('david', 'art', 'james', 'frenciscoparra', 'gustavo');
-        artistas['fedde'] = new Array('infected', 'jamie', 'steve', 'ignacio', 'phillipe');
+        artistas['rodrigo'] = new Array();
+        artistas['rodrigo']['match'] = new Array('alex', 'pia', 'felipe', 'javiersuka');
+        artistas['rodrigo']['img'] = 'images/match/otros.png';
+        artistas['marcos'] = new Array();
+        artistas['marcos']['match'] = new Array('alex', 'matanza', 'butano', 'tweeter', 'nicocrespo');
+        artistas['marcos']['img'] = 'images/match/otros.png';
+        artistas['michael'] = new Array();
+        artistas['michael']['match'] = new Array('matanza', 'marciano', 'mathias', 'guti', 'fernandomujica', 'rodrigoguendelman');
+        artistas['michael']['img'] = 'images/match/michael.png';
+        artistas['nervo'] = new Array();
+        artistas['nervo']['match'] = new Array('calvin', 'solomun', 'reboot', 'fernandaarrau', 'vives');
+        artistas['nervo']['img'] = 'images/match/nervo.png';
+        artistas['alesso'] = new Array();
+        artistas['alesso']['match'] = new Array('david', 'art', 'james', 'frenciscoparra', 'gustavo');
+        artistas['alesso']['img'] = 'images/match/alesso.png';
+        artistas['fedde'] = new Array();
+        artistas['fedde']['match'] = new Array('infected', 'jamie', 'steve', 'ignacio', 'phillipe');
+        artistas['fedde']['img'] = 'images/match/fedde.png';
         // Cream
-        artistas['felipe'] = new Array('alex', 'pia', 'rodrigo', 'javiersuka');
-        artistas['tweeter'] = new Array('alex', 'matanza', 'butano', 'marcos', 'nicocrespo');
-        artistas['guti'] = new Array('matanza', 'marciano', 'mathias', 'michael', 'fernandomujica', 'rodrigoguendelman');
-        artistas['reboot'] = new Array('calvin', 'solomun', 'nervo', 'fernandaarrau', 'vives');
-        artistas['james'] = new Array('david', 'art', 'alesso', 'frenciscoparra', 'gustavo');
-        artistas['steve'] = new Array('infected', 'jamie', 'fedde', 'ignacio', 'phillipe');
+        artistas['felipe'] = new Array();
+        artistas['felipe']['match'] = new Array('alex', 'pia', 'rodrigo', 'javiersuka');
+        artistas['felipe']['img'] = 'images/match/otros.png';
+        artistas['tweeter'] = new Array();
+        artistas['tweeter']['match'] = new Array('alex', 'matanza', 'butano', 'marcos', 'nicocrespo');
+        artistas['tweeter']['img'] = 'images/match/otros.png';
+        artistas['guti'] = new Array();
+        artistas['guti']['match'] = new Array('matanza', 'marciano', 'mathias', 'michael', 'fernandomujica', 'rodrigoguendelman');
+        artistas['guti']['img'] = 'images/match/guti.png';
+        artistas['reboot'] = new Array();
+        artistas['reboot']['match'] = new Array('calvin', 'solomun', 'nervo', 'fernandaarrau', 'vives');
+        artistas['reboot']['img'] = 'images/match/reboot.png';
+        artistas['james'] = new Array();
+        artistas['james']['match'] = new Array('david', 'art', 'alesso', 'frenciscoparra', 'gustavo');
+        artistas['james']['img'] = 'images/match/james.png';
+        artistas['steve'] = new Array();
+        artistas['steve']['match'] = new Array('infected', 'jamie', 'fedde', 'ignacio', 'phillipe');
+        artistas['steve']['img'] = 'images/match/steve.png';
         // Radio Zero
-        artistas['javiersuka'] = new Array('alex', 'pia', 'rodrigo', 'felipe');
-        artistas['nicocrespo'] = new Array('alex', 'matanza', 'butano', 'marcos', 'tweeter');
-        artistas['fernandomujica'] = new Array('matanza', 'marciano', 'mathias', 'michael', 'guti');
-        artistas['rodrigoguendelman'] = new Array('marciano', 'mathias', 'michael', 'guti');
-        artistas['fernandaarrau'] = new Array('calvin', 'solomun', 'nervo', 'reboot');
-        artistas['vives'] = new Array('calvin', 'solomun', 'nervo', 'reboot');
-        artistas['franciscoparra'] = new Array('david', 'art', 'alesso', 'james');
-        artistas['gustavo'] = new Array('david', 'art', 'alesso', 'james');
-        artistas['ignacio'] = new Array('infected', 'jamie', 'fedde', 'steve');
-        artistas['phillipe'] = new Array('infected', 'jamie', 'fedde', 'steve');
+        artistas['javiersuka'] = new Array();
+        artistas['javiersuka']['match'] = new Array('alex', 'pia', 'rodrigo', 'felipe');
+        artistas['javiersuka']['img'] = 'images/match/otros.png';
+        artistas['nicocrespo'] = new Array();
+        artistas['nicocrespo']['match'] = new Array('alex', 'matanza', 'butano', 'marcos', 'tweeter');
+        artistas['nicocrespo']['img'] = 'images/match/otros.png';
+        artistas['fernandomujica'] = new Array();
+        artistas['fernandomujica']['match'] = new Array('matanza', 'marciano', 'mathias', 'michael', 'guti');
+        artistas['fernandomujica']['img'] = 'images/match/otros.png';
+        artistas['rodrigoguendelman'] = new Array();
+        artistas['rodrigoguendelman']['match'] = new Array('marciano', 'mathias', 'michael', 'guti');
+        artistas['rodrigoguendelman']['img'] = 'images/match/otros.png';
+        artistas['fernandaarrau'] = new Array();
+        artistas['fernandaarrau']['match'] = new Array('calvin', 'solomun', 'nervo', 'reboot');
+        artistas['fernandaarrau']['img'] = 'images/match/otros.png';
+        artistas['vives'] = new Array();
+        artistas['vives']['match'] = new Array('calvin', 'solomun', 'nervo', 'reboot');
+        artistas['vives']['img'] = 'images/match/otros.png';
+        artistas['franciscoparra'] = new Array();
+        artistas['franciscoparra']['match'] = new Array('david', 'art', 'alesso', 'james');
+        artistas['franciscoparra']['img'] = 'images/match/otros.png';
+        artistas['gustavo'] = new Array();
+        artistas['gustavo']['match'] = new Array('david', 'art', 'alesso', 'james');
+        artistas['gustavo']['img'] = 'images/match/otros.png';
+        artistas['ignacio'] = new Array();
+        artistas['ignacio']['match'] = new Array('infected', 'jamie', 'fedde', 'steve');
+        artistas['ignacio']['img'] = 'images/match/otros.png';
+        artistas['phillipe'] = new Array();
+        artistas['phillipe']['match'] = new Array('infected', 'jamie', 'fedde', 'steve');
+        artistas['phillipe']['img'] = 'images/match/otros.png';
+
+        // Función descrubre match
+        function revisar_match(buscar) {
+          var retorno = null;
+          for (i in seleccionados) {
+            for (j in artistas[seleccionados[i]]) {
+              for (x in artistas[seleccionados[i]][j]) {
+                if (artistas[seleccionados[i]][j][x] == buscar) {
+                  retorno = seleccionados[i];
+                }
+              }
+            }
+          }
+
+          return retorno;
+        }
         </script>
 
         <script>
@@ -93,10 +178,12 @@
       		  $('#'+whichLayer).show();
       		  		  
       		}
+
         </script>
       
       <script>
       var seleccionados = new Array();
+      var cambiar;
         $(document).on('ready', function() {
           $("body").queryLoader2({ 
                     backgroundColor: '#FFF', 
@@ -111,23 +198,53 @@
               }
           } ?>
 
-          toggleLayer('BIO-david');
-
          $("div[id*='boton-']").on('click', function() {
                   var artista = $(this).attr('id');
                   artista = artista.substring(6);
-                  $("#"+artista+" img.bottom").toggleClass("transparent");
                   var noexiste = true;
-                  for (i=0; i<seleccionados.length; i++) {
-                    if (seleccionados[i] == artista) {
-                      noexiste = false;
-                      seleccionados.splice(i, 1);
+                    for (i=0; i<seleccionados.length; i++) {
+                      if (seleccionados[i] == artista) {
+                        noexiste = false;
+                        seleccionados.splice(i, 1);
+                        $("#"+artista+" img.bottom").toggleClass("transparent");
+                      }
                     }
-                  }
-                  if (noexiste) {
-                    seleccionados.push(artista);
-                  }
+                    if (noexiste) {
+                      var match = revisar_match(artista);
+                      if (match == null) {
+                        $("#"+artista+" img.bottom").toggleClass("transparent");
+                        seleccionados.push(artista);
+                      } else {
+                        $('.individuales_img #art1').attr('src', artistas[match]['img']);
+                        $('.individuales_img #art1').attr('alt', match);
+                        $('.individuales_text #art1').html(match.toUpperCase());
+                        $('.individuales_img #art2').attr('src', artistas[artista]['img']);
+                        $('.individuales_img #art2').attr('alt', artista);
+                        $('.individuales_text #art2').html(artista.toUpperCase());
+                        $('.juntos #art1').attr('src', artistas[match]['img']);
+                        $('.juntos #art2').attr('src', artistas[artista]['img']);
+                        $('.juntos').attr('title', artista);
+                        cambiar=match;
+                        $('#match').bPopup({
+                            closeClass: 'cerrar'
+                          });
+                      }
+                    } 
                 });
+
+          $('.individuales_img #art2').click(function() {
+            var artista = $(this).attr('alt');
+            $("#"+artista+" img.bottom").toggleClass("transparent");
+            seleccionados.push(artista);
+            seleccionados.splice(seleccionados.indexOf(cambiar), 1);
+            $("#"+cambiar+" img.bottom").toggleClass("transparent");
+          });
+
+          $('.juntos').click(function() {
+            var artista = $(this).attr('title');
+            $("#"+artista+" img.bottom").toggleClass("transparent");
+            seleccionados.push(artista);
+          });
 
           $('#continuar').click(function() {
             $.blockUI({
@@ -167,6 +284,20 @@
 		
     </head>
     <body>
+      <div id="match">
+        <div class="individuales_img">
+          <img id="art1" class="cerrar" src="images/match/otros.png" />
+          <img id="art2" class="cerrar" src="images/match/otros.png" />
+        </div>
+        <div class="individuales_text">
+          <div id="art1">Artista 1</div>
+          <div id="art2">Artista 2</div>
+        </div>
+        <div class="juntos cerrar">
+          <img id="art1" src="images/match/otros.png" />
+          <img id="art2" src="images/match/otros.png" />
+        </div>
+      </div>
 		<div id="main">
   			<div id="alex" ><a href="javascript:toggleLayer('BIO-alex');" ><img class="bottom" src="images/boxes/alex.png" /><img class="top" src="images/boxes-2/alex.png" /></a></div>
 			<div id="matanza"><a href="javascript:toggleLayer('BIO-matanza');" ><img class="bottom" src="images/boxes/matanza.png" /><img class="top" src="images/boxes-2/matanza.png" /></a></div>
@@ -488,6 +619,8 @@
 			
 			
                 <div id="start-paso1"><a href="#"><img id="continuar" src="images/botones/continuar.png" /></a></div>
+
+
          <!-- JavaScript includes -->
 		<script src="js/script.js"></script>
     </body>

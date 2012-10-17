@@ -2671,3 +2671,66 @@ table.graph td img {
 #horario-creado {
   display: none;
 }
+
+#match {
+  background: url(../images/match/match.png) no-repeat center top;
+  width: 447px;
+  height: 311px;
+  display: block;
+  position: absolute;
+  z-index: 500;
+  display: none;
+  border: 5px solid #FFF;
+  border-radius: 5px;
+}
+
+.individuales_img {
+  margin-top: 171px;
+}
+
+.individuales_img img {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.individuales_img #art1 {
+  float: left;
+  margin-left: 30px
+}
+
+.individuales_img #art2 {
+  float: right;
+  margin-right: 30px
+}
+
+.individuales_text {
+  margin-top: 240px;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.individuales_text * {
+  display: inline-block;
+}
+
+.individuales_text #art1 {
+  float: left;
+  margin-left: -77px;
+}
+
+.individuales_text #art2 {
+  float: right;
+  margin-right: -79px;
+}
+
+.juntos {
+  margin-top: 257px;
+  cursor: pointer;
+}
+.juntos * {
+  display: inline-block;
+}
+
+.juntos img {
+  width: 45px
+}
