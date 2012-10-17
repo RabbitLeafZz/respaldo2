@@ -31,7 +31,7 @@
                 $final[$key]['y'] = 334;
                 break;
             /* Club Room */
-            case 'felipe':
+            case 'pia':
                 $final[$key]['x'] = 155;
                 $final[$key]['y'] = 38;
                 break;
@@ -81,7 +81,7 @@
                 $final[$key]['y'] = 300;
                 break;
             /* Cream */
-            case 'pia':
+            case 'felipe':
                 $final[$key]['x'] = 338;
                 $final[$key]['y'] = 38;
                 break;
@@ -97,11 +97,11 @@
                 $final[$key]['x'] = 338;
                 $final[$key]['y'] = 169;
                 break;
-            case 'steve':
+            case 'james':
                 $final[$key]['x'] = 338;
                 $final[$key]['y'] = 235;
                 break;
-            case 'james':
+            case 'steve':
                 $final[$key]['x'] = 338;
                 $final[$key]['y'] = 300;
                 break;

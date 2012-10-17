@@ -267,7 +267,7 @@ font-family:creamfields;
   margin-top: -359px;
 }
 
-#BIO-james
+#BIO-steve
 {
 	font-size: medium;
 color: white;
@@ -332,7 +332,7 @@ font-family:creamfields;
   margin-top: -359px;
 }
 
-#BIO-steve
+#BIO-james
 {
 font-size: medium;
 color: white;
@@ -343,7 +343,7 @@ font-family:creamfields;
   margin-top: -359px;
 }
 
-#BIO-pia
+#BIO-felipe
 {
 font-size: medium;
 color: white;
@@ -365,7 +365,7 @@ font-family:creamfields;
   margin-top: -359px;
 }
 
-#BIO-felipe
+#BIO-pia
 {
 font-size: medium;
 color: white;
@@ -2663,4 +2663,8 @@ table.graph td img {
 .botones2 #continuar {
   float: right;
   margin-right: 20px;
+}
+
+#xperia-3 {
+  position: absolute;
 }

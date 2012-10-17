@@ -130,7 +130,7 @@
  		</div>
 
 		<div id="clubroom">
-  			<div id="felipe"><a href="javascript:toggleLayer('BIO-felipe');" ><img class="bottom" src="images/boxes/felipevenegas.png" /><img class="top" src="images/boxes-2/felipe.png" /></a></div>
+  		<div id="pia"><a href="javascript:toggleLayer('BIO-pia');" ><img class="bottom" src="images/boxes/pia.png" /><img class="top" src="images/boxes-2/pia.png" /></a></div>
 			<div id="butano"><a href="javascript:toggleLayer('BIO-butano');"> <img class="bottom" src="images/boxes/butano.png" /><img class="top" src="images/boxes-2/butano.png" /></a></div>
 			<div id="mathias"><a href="javascript:toggleLayer('BIO-mathias');" ><img class="bottom" src="images/boxes/mathias.png" /><img class="top" src="images/boxes-2/mathias.png" /></a></div>
 			<div id="solomun"><a href="javascript:toggleLayer('BIO-solomun');" ><img class="bottom" src="images/boxes/solomun.png" /><img class="top" src="images/boxes-2/solomun.png" /></a></div>
@@ -148,12 +148,12 @@
  		</div>
 
 		<div id="cream">
-  			<div id="pia"><a href="javascript:toggleLayer('BIO-pia');" ><img class="bottom" src="images/boxes/pia.png" /><img class="top" src="images/boxes-2/pia.png" /></a></div>
+      <div id="felipe"><a href="javascript:toggleLayer('BIO-felipe');" ><img class="bottom" src="images/boxes/felipevenegas.png" /><img class="top" src="images/boxes-2/felipe.png" /></a></div>
 			<div id="tweeter"><a href="javascript:toggleLayer('BIO-tweeter');" ><img class="bottom" src="images/boxes/tweeter.png" /><img class="top" src="images/boxes-2/tweeter.png" /></a></div>
 			<div id="guti"><a href="javascript:toggleLayer('BIO-guti');" ><img class="bottom" src="images/boxes/guti.png" /><img class="top" src="images/boxes-2/guti.png" /></a></div>
 			<div id="reboot"><a href="javascript:toggleLayer('BIO-reboot');" ><img class="bottom" src="images/boxes/reboot.png" /><img class="top" src="images/boxes-2/reboot.png" /></a></div>
-			<div id="steve"><a href="javascript:toggleLayer('BIO-steve');" ><img class="bottom" src="images/boxes/steve.png" /><img class="top" src="images/boxes-2/steve.png" /></a></div>
 			<div id="james"><a href="javascript:toggleLayer('BIO-james');" ><img class="bottom" src="images/boxes/james.png" /><img class="top" src="images/boxes-2/james.png" /></a></div>
+      <div id="steve"><a href="javascript:toggleLayer('BIO-steve');" ><img class="bottom" src="images/boxes/steve.png" /><img class="top" src="images/boxes-2/steve.png" /></a></div>
  		</div>
 			
 		<div id="zero">
