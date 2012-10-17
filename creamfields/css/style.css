@@ -2098,7 +2098,7 @@ margin-left: 460px;
 }
 
 #start-index  {
-    margin-top: 540px;
+    margin-top: 520px;
 }
 
 #start-2-index {
@@ -2667,4 +2667,7 @@ table.graph td img {
 
 #xperia-3 {
   position: absolute;
+}
+#horario-creado {
+  display: none;
 }
