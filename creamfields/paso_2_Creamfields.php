@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 require 'facebook/src/facebook.php';
 
 // Create our Application instance (replace this with your appId and secret).
@@ -15,12 +16,10 @@ $user = $facebook->getUser();
 if ($user) {
   
 } else {
-  header('Location: index.php');
+  //header('Location: index.php');
 }
 
 $now = getdate();
-
-session_start();
 
 ?>
 
@@ -59,13 +58,13 @@ session_start();
 
                 img.src = "images/final/fondo.png";
 
-                <?php if (isset($_SESSION['seleccion'])) {
+                <?php
                     foreach ($_SESSION['seleccion'] as $key => $value) {
                         echo "var imagen".$key." = new Image();\n";
-                        echo "imagen".$key.".onload = function() { ctx.drawImage(imagen".$key.", ".$value['x'].", ".$value['y']."); }\n";
                         echo "imagen".$key.".src = '" . $value['url'] . "';\n";
-                    }
-                } ?>
+                        echo "imagen".$key.".onload = function() { ctx.drawImage(imagen".$key.", ".$value['x'].", ".$value['y']."); }\n";
+                    } 
+                ?>
 
                 $('#continuar').click(function() {
                     $.blockUI({
@@ -80,12 +79,33 @@ session_start();
                         color: '#fff' 
                       } 
                     });
-                    $.post('guardar_imagen.php',{img : canvas.toDataURL(), nombre: "<?php echo $perfil['id'] . '_' . $now[0] . '.png'; ?>"}, function() {
-                        $.post('guardar_bd.php',{fb_id: '<?php echo $perfil["id"]; ?>', fb_nombre: '<?php echo $perfil["name"]; ?>', fb_link_usr: '<?php echo $perfil["link"]; ?>', link_img: 'http://reframe.cl/creamfields/upload/<?php echo $perfil["id"] . "_" . $now[0] . ".png"; ?>', }, function(data) {
+                    $.post('guardar_imagen.php',{img : canvas.toDataURL(), nombre: "<?php echo $_SESSION['perfil']['fb_id'] . '_' . $now[0] . '.png'; ?>"}, function() {
+                        $.post('guardar_bd.php',{fb_id: "<?php echo $_SESSION['perfil']['fb_id']; ?>", fb_nombre: "<?php echo $_SESSION['perfil']['fb_nombre']; ?>", fb_link_usr: "<?php echo $_SESSION['perfil']['fb_link_usr']; ?>", link_img: "http://reframe.cl/creamfields/upload/<?php echo $_SESSION['perfil']['fb_id'] . '_' . $now[0] . '.png'; ?>", }, function(data) {
                             window.location = "paso_3_Creamfields.php?id="+data;
                         });
                     });
                 });
+                
+                <?php
+                    if ($_SESSION['reload'] == 1) {
+                ?>
+                        $.blockUI({
+                          message: 'Espera un momento...', 
+                          css: { 
+                            border: 'none', 
+                            padding: '15px', 
+                            backgroundColor: '#000', 
+                            '-webkit-border-radius': '10px', 
+                            '-moz-border-radius': '10px', 
+                            opacity: .5, 
+                            color: '#fff' 
+                          } 
+                        }); 
+                <?php
+                        echo "setTimeout ('window.location.reload();', 2000);";
+                        $_SESSION['reload'] = 0;
+                    }
+                ?>
             });
         </script>
     
@@ -96,17 +116,9 @@ session_start();
             <canvas id="horario" height="370" width="530">
             </canvas>
         </div>
-            <?php if ($user): ?>
                 <div class="botones2">
                     <div id="modificar"><a href="paso_1_Creamfields2.php"><img src="images/botones/modificar.png" /></a></div>
                     <div id="continuar"><a href="#"><img src="images/botones/continuar.png" /></a></div>
                 </div>
-            <?php else: ?>
-                <div id="like">
-                    Ingresa a Facebook
-                    <a href="<?php echo $loginUrl; ?>">Login</a>
-                </div>
-            <?php endif ?>
-        </div>
     </body>
 </html>

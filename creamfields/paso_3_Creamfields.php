@@ -15,7 +15,7 @@ $user = $facebook->getUser();
 if ($user) {
   $logoutUrl = $facebook->getLogoutUrl();
 } else {
-  header('Location: index.php');
+  //header('Location: index.php');
 }
 
 ?>

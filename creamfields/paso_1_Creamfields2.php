@@ -15,10 +15,12 @@
   if ($user) {
     $logoutUrl = $facebook->getLogoutUrl();
   } else {
-    header('Location: index.php');
+    //header('Location: index.php');
   }
 
   session_start();
+  $now = getdate();
+  $_SESSION['reload'] = 1;
 
 ?>
 
@@ -39,6 +41,50 @@
         <script src="js/jquery-1.7.2.min.js"></script>
         <script type="text/javascript" src="js/jquery.queryloader2.js"></script>
         <script type="text/javascript" src="js/jquery.blockUI.js" ></script>
+
+        <script type="text/javascript">
+        // Definición array de artistas para match
+        var artistas = new Array();
+        // Main
+        artistas['alex'] = new Array('pia', 'rodrigo', 'felipe', 'javiersuka');
+        artistas['matanza'] = new Array('butano', 'marcos', 'tweeter', 'nicocrespo', 'mathias', 'michael', 'guti', 'fernandomujica');
+        artistas['marciano'] = new Array('mathias', 'michael', 'guti', 'fernandomujica', 'rodrigoguendelman');
+        artistas['calvin'] = new Array('solomun', 'nervo', 'reboot', 'fernandaarrau', 'vives');
+        artistas['david'] = new Array('art', 'alesso', 'james', 'franciscoparra', 'gustavo');
+        artistas['infected'] = new Array('jaime', 'fedde', 'steve', 'ignacio', 'phillipe');
+        // Club Room
+        artistas['pia'] = new Array('alex', 'rodrigo', 'felipe', 'javiersuka');
+        artistas['butano'] = new Array('alex', 'matanza', 'marcos', 'tweeter', 'nicocrespo');
+        artistas['mathias'] = new Array('matanza', 'marciano', 'michael', 'guti', 'fernandomujica', 'rodrigoguendelman');
+        artistas['solomun'] = new Array('calvin', 'nervo', 'reboot', 'fernandaarrau', 'vives');
+        artistas['art'] = new Array('david', 'alesso', 'james', 'franciscoparra', 'gustavo');
+        artistas['jamie'] = new Array('infected', 'fedde', 'steve', 'ignacio', 'phillipe');
+        // Alternative
+        artistas['rodrigo'] = new Array('alex', 'pia', 'felipe', 'javiersuka');
+        artistas['marcos'] = new Array('alex', 'matanza', 'butano', 'tweeter', 'nicocrespo');
+        artistas['michael'] = new Array('matanza', 'marciano', 'mathias', 'guti', 'fernandomujica', 'rodrigoguendelman');
+        artistas['nervo'] = new Array('calvin', 'solomun', 'reboot', 'fernandaarrau', 'vives');
+        artistas['alesso'] = new Array('david', 'art', 'james', 'frenciscoparra', 'gustavo');
+        artistas['fedde'] = new Array('infected', 'jamie', 'steve', 'ignacio', 'phillipe');
+        // Cream
+        artistas['felipe'] = new Array('alex', 'pia', 'rodrigo', 'javiersuka');
+        artistas['tweeter'] = new Array('alex', 'matanza', 'butano', 'marcos', 'nicocrespo');
+        artistas['guti'] = new Array('matanza', 'marciano', 'mathias', 'michael', 'fernandomujica', 'rodrigoguendelman');
+        artistas['reboot'] = new Array('calvin', 'solomun', 'nervo', 'fernandaarrau', 'vives');
+        artistas['james'] = new Array('david', 'art', 'alesso', 'frenciscoparra', 'gustavo');
+        artistas['steve'] = new Array('infected', 'jamie', 'fedde', 'ignacio', 'phillipe');
+        // Radio Zero
+        artistas['javiersuka'] = new Array('alex', 'pia', 'rodrigo', 'felipe');
+        artistas['nicocrespo'] = new Array('alex', 'matanza', 'butano', 'marcos', 'tweeter');
+        artistas['fernandomujica'] = new Array('matanza', 'marciano', 'mathias', 'michael', 'guti');
+        artistas['rodrigoguendelman'] = new Array('marciano', 'mathias', 'michael', 'guti');
+        artistas['fernandaarrau'] = new Array('calvin', 'solomun', 'nervo', 'reboot');
+        artistas['vives'] = new Array('calvin', 'solomun', 'nervo', 'reboot');
+        artistas['franciscoparra'] = new Array('david', 'art', 'alesso', 'james');
+        artistas['gustavo'] = new Array('david', 'art', 'alesso', 'james');
+        artistas['ignacio'] = new Array('infected', 'jamie', 'fedde', 'steve');
+        artistas['phillipe'] = new Array('infected', 'jamie', 'fedde', 'steve');
+        </script>
 
         <script>
           function toggleLayer( whichLayer )
@@ -64,6 +110,8 @@
                   echo "seleccionados.push('".$value['artista']."');\n";
               }
           } ?>
+
+          toggleLayer('BIO-david');
 
          $("div[id*='boton-']").on('click', function() {
                   var artista = $(this).attr('id');
@@ -107,9 +155,9 @@
                 url:"guardar_datos.php",
                 data:{jObject:  jObject},
                 success: function(data) {
-                  if (data == 'OK') {
-                    setTimeout ('window.location = "paso_2_Creamfields.php";', 10000); 
-                  }                  
+                  if (data == "OK") {
+                    setTimeout ('window.location = "paso_2_Creamfields.php";', 3000); 
+                  }
                 }
               });
           });
@@ -119,7 +167,6 @@
 		
     </head>
     <body>
-    
 		<div id="main">
   			<div id="alex" ><a href="javascript:toggleLayer('BIO-alex');" ><img class="bottom" src="images/boxes/alex.png" /><img class="top" src="images/boxes-2/alex.png" /></a></div>
 			<div id="matanza"><a href="javascript:toggleLayer('BIO-matanza');" ><img class="bottom" src="images/boxes/matanza.png" /><img class="top" src="images/boxes-2/matanza.png" /></a></div>
@@ -440,15 +487,7 @@
 			</div>
 			
 			
-	  <?php if ($user): ?>
                 <div id="start-paso1"><a href="#"><img id="continuar" src="images/botones/continuar.png" /></a></div>
-            <?php else: ?>
-                <div id="like-paso1">
-                    Ingresa a Facebook
-                    <a href="<?php echo $loginUrl; ?>">Login</a>
-                </div>
-            <?php endif ?>
-        </div>
          <!-- JavaScript includes -->
 		<script src="js/script.js"></script>
     </body>
