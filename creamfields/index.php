@@ -26,6 +26,12 @@ if ($user) {
 // Trae los creamfields creados
 $datos = mysql_query("SELECT * FROM datos ORDER BY id DESC;");
 
+session_start();
+$_SESSION['perfil']['fb_id'] = $perfil['id'];
+$_SESSION['perfil']['fb_nombre'] = $perfil['name'];
+$_SESSION['perfil']['fb_link_usr'] = $perfil['link'];
+
+
 ?>
 
 <!--[if lte IE 6]>

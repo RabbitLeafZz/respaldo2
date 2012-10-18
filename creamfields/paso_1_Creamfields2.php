@@ -335,7 +335,7 @@
  		</div>
 			
 		<div id="zero">
-  			<div id="javiersuka"><a href="javascript:toggleLayer('BIO-javiersuka');" ><img class="bottom" src="images/boxes/javiersuka.png" /><img class="top" src="images/boxes-2/javiersuka.png" /></a></div>
+  			<div id="javiersuka"><a href="javascript:toggleLayer('BIO-javiersuka');" ><img class="bottom" src="images/boxes/javierramos.png" /><img class="top" src="images/boxes-2/javiersuka.png" /></a></div>
 			<div id="nicocrespo"><a href="javascript:toggleLayer('BIO-nicocrespo');" ><img class="bottom" src="images/boxes/nicocrespo.png" /><img class="top" src="images/boxes-2/nicocrespo.png" /></a></div>
 			<div id="fernandomujica"><a href="javascript:toggleLayer('BIO-fernandomujica');" ><img class="bottom" src="images/boxes/fernandomujica.png" /><img class="top" src="images/boxes-2/fernandomujica.png" /></a></div>
 			<div id="rodrigoguendelman"><a href="javascript:toggleLayer('BIO-rodrigoguendelman');" ><img class="bottom" src="images/boxes/rodrigoguendelman.png" /><img class="top" src="images/boxes-2/rodrigoguendelman.png" /></a></div>
@@ -418,7 +418,7 @@
   			</div>
   			
   			<div id="BIO-javiersuka" class="bios">
-				<div id="nombre-dj">Javier Suka</div>
+				<div id="nombre-dj">Javier Ramos</div>
 				<div id="foto-dj"><img src="images/fotosdjs-bio/logo-1.png" /></div>
   				<div id="descripcion-dj"></div>
   				<div id="boton-javiersuka"><a href="#" id="flipToRecover" class="flipLink"><img src="images/botones/seleccionar_artista.png" /></a></div>
