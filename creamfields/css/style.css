@@ -2742,27 +2742,32 @@ opacity: 0.25;
 }
 
 .individuales_text {
-  margin-top: 240px;
+  display: block;
+  position: absolute;
   color: #FFF;
   font-weight: bold;
+  margin-top: 76px;
+  height: 23px;
+  width: 446px;
+  font-size: 8pt;
 }
 
 .individuales_text * {
   display: inline-block;
+  background-color: #0063a5;
 }
 
 .individuales_text #art1 {
   float: left;
-  margin-left: -77px;
 }
 
 .individuales_text #art2 {
   float: right;
-  margin-right: -79px;
 }
 
 .juntos {
-  margin-top: 257px;
+  margin-top: 258px;
+  margin-left: 3px;
   cursor: pointer;
 }
 .juntos * {

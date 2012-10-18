@@ -61,7 +61,7 @@ $_SESSION['perfil']['fb_link_usr'] = $perfil['link'];
         <link href="css/style.css" rel="stylesheet" type="text/css" />
         <script src="js/jquery-1.7.2.min.js"></script>
         <script src="js/jquery.queryloader2.js"></script>
-        <script type="text/javascript" src="http://www.paginaswebynnova.com/lib/js-ynnova.js"></script>
+        <script type="text/javascript" src="js/js-ynnova.js"></script>
         <script type="text/javascript">
             BrowserDetect.init();
         </script>
@@ -72,8 +72,6 @@ $_SESSION['perfil']['fb_link_usr'] = $perfil['link'];
                     barColor: '#000',
                     percentage: true
                 });
-
-                $('#navegador').html( BrowserDetect.browser + ' - ' + BrowserDetect.version);
 
                 var navegador = false;
 
@@ -120,15 +118,13 @@ $_SESSION['perfil']['fb_link_usr'] = $perfil['link'];
                 <div id="start-index"><a href="paso_1_Creamfields2.php"><img src="images/botones/comenzar.png" /></a></div>
             <?php else: ?>
                 <div id="like">
-                    Ingresa a Facebook
-                    <a href="<?php echo $loginUrl; ?>">Login</a>
+                    Ingresa a Facebook para utilizar la aplicación
                 </div>
             <?php endif ?>
         <div class="creamfields_creados">
             <h1>Creamfields creados por otros</h1>
             <h3>Pincha en un creamfields para votar por el</h3>
             <div class="contenido">
-                <div id="navegador"></div>
                 <?php while ($row = mysql_fetch_assoc($datos)) { ?>
                     <h2>Creado por <a href="<?php echo $row['fb_link_usr']; ?>"><?php echo $row['fb_nombre']; ?></a></h2>
                     <a href="http://apps.facebook.com/micreamfields/?id=<?php echo $row['id']; ?>" target="_blank" ><img src="<?php echo $row['link_img']; ?>" /></a>
