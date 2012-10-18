@@ -100,6 +100,7 @@ if ($user) {
             <div id="invitar"></div>
             <div id="imprimir"></div>
             <div id="mail"></div>
+            <a href="https://apps.facebook.com/micreamfields"><div id="volver"></div></a>
         </div>
         <iframe id="pdf" src="http://www.reframe.cl/creamfields/pdfimg.php?id=<?php echo $_GET['id']; ?>" frameborder="0" width="600" height="850">Si ves este mensaje, significa que tu navegador no tiene soporte para marcos o el mismo está deshabilitado</iframe>
 

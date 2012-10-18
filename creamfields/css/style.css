@@ -21,17 +21,17 @@ margin-top: 4px;
 margin-right:20px;	
 }
 
-#descripcion-dj{
+#descripcion-dj {
 margin: 5 auto;
-width:210px;
-margin-left: 5px:
-margin-right: 5px;
+width: 210px;
+margin-left: 5px: margin-right: 5px;
 margin-top: -10px;
-border:none;
-text-align: left;
-font-size:0.8em;
-padding:0;	
-line-height:15px;
+border: none;
+text-align: center;
+font-size: 13pt;
+padding: 0;
+line-height: normal;
+
 }
 
 .bottom{
@@ -2678,6 +2678,15 @@ opacity: 0.25;
 
 }
 
+#volver {
+width: 715px;
+height: 131px;
+margin-left: 46px;
+cursor: pointer;
+margin-top: 68px;
+}
+
+
 #formemail {
   background-color: #DDD;
   width: 200px;
@@ -2755,6 +2764,9 @@ opacity: 0.25;
 .individuales_text * {
   display: inline-block;
   background-color: #0063a5;
+  height: 15px;
+  line-height: normal;
+  padding: 3px;
 }
 
 .individuales_text #art1 {
@@ -2777,3 +2789,30 @@ opacity: 0.25;
 .juntos img {
   width: 45px
 }
+
+.contenido div.por {
+  font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+  color: gray;
+  font-size: 11px;
+  text-align: left;
+  margin-left: 25px;
+  vertical-align: top;
+  margin-bottom: 16px;
+  line-height: normal;
+  margin-bottom: 25px;
+}
+
+.contenido div.por a {
+  font-weight: bold;
+  color: #3B5998;
+  text-decoration: none;
+}
+
+img.profile_picture {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 0px;
+  float: left;
+}
+

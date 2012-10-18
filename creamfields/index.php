@@ -126,7 +126,13 @@ $_SESSION['perfil']['fb_link_usr'] = $perfil['link'];
             <h3>Pincha en un creamfields para votar por el</h3>
             <div class="contenido">
                 <?php while ($row = mysql_fetch_assoc($datos)) { ?>
-                    <h2>Creado por <a href="<?php echo $row['fb_link_usr']; ?>"><?php echo $row['fb_nombre']; ?></a></h2>
+                    <div class="por">
+                        <img class="profile_picture" src="http://graph.facebook.com/<?php echo $row['fb_id']; ?>/picture">
+                        <div style="margin-left: 55px;">
+                            <a href="<?php echo $row['fb_link_usr']; ?>" target="_blank"><?php echo $row['fb_nombre']; ?></a>
+                        </div>
+                        <div style="margin-left: 55px;">Compartido vía Mi Creamfields</div>
+                    </div>
                     <a href="http://apps.facebook.com/micreamfields/?id=<?php echo $row['id']; ?>" target="_blank" ><img src="<?php echo $row['link_img']; ?>" /></a>
                     <hr />
                 <?php } ?>
