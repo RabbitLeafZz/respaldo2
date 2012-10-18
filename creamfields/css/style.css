@@ -2625,6 +2625,21 @@ table.graph td img {
   margin-left: 165px;
   cursor: pointer;
 }
+
+#invitar:hover {
+  
+ opacity: 0.25; 
+ background:blue;  
+ display:block; 
+ text-decoration:none;
+ -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+ }
+
+
+
+
 #imprimir {
   width: 244px;
   height: 31px;
@@ -2632,12 +2647,35 @@ table.graph td img {
   cursor: pointer;
   margin-top: 7px;
 }
+#imprimir:hover{
+opacity: 0.25; 
+ background:aqua;  
+ display:block; 
+ text-decoration:none;
+ -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+
+}
+
 #mail {
   width: 315px;
   height: 31px;
   margin-left: 246px;
   cursor: pointer;
   margin-top: 7px;
+}
+
+#mail:hover{
+opacity: 0.25; 
+ background:aqua;  
+ display:block; 
+ text-decoration:none;
+ -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+
+
 }
 
 #formemail {

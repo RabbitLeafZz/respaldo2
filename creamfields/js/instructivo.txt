@@ -1,0 +1,48 @@
+Detector de navegador y sistema operativo Ynnova
+Adaptado por Iván Nicolás Schwindt, programador & diseñador web
+*******************************************************************
+
+FUNCIONAMIENTO
+**************
+- A travéz de una librería javascript (js-ynnova.js) se hace la detección del navegador, versión del navegador y sistema operativo
+- Para que funcione, luego de declarar la libreria js-ynnova.js debe llamarse a BrowserDetect.init();
+
+VENTAJAS
+********
+Es una interesante herramienta útil para mostrar diferentes gráficas o informacion dependiendo del navegador
+
+REQUISITOS
+**********
+- Declarar la libreria js-ynnova.js como se muestra en el ejemplo
+
+
+ARCHIVOS
+********
+index.html : El archivo contiene el ejemplo de como utilizar la detección del navegador, version y sistema operativo.
+
+
+Valores que puede tomar BrowserDetect.browser:
+**********************************************
+Chrome
+OmniWeb
+Safari
+Opera
+iCab
+Konqueror
+Firefox
+Camino
+Netscape
+Explorer
+Mozilla
+Netscape
+
+Valores que puede tomar BrowserDetect.OS:
+*****************************************
+Windows
+Mac
+iPhone
+Linux
+
+BrowserDetect.version: 
+**********************
+es un valor decimal

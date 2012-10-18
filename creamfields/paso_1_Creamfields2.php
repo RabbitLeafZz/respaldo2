@@ -81,9 +81,9 @@
         artistas['art'] = new Array();
         artistas['art']['match'] = new Array('david', 'alesso', 'james', 'franciscoparra', 'gustavo');
         artistas['art']['img'] = 'images/match/art.png';
-        artistas['jamie'] = new Array();
-        artistas['jamie']['match'] = new Array('infected', 'fedde', 'steve', 'ignacio', 'phillipe');
-        artistas['jamie']['img'] = 'images/match/jamie.png';
+        artistas['jaime'] = new Array();
+        artistas['jaime']['match'] = new Array('infected', 'fedde', 'steve', 'ignacio', 'phillipe');
+        artistas['jaime']['img'] = 'images/match/jamie.png';
         // Alternative
         artistas['rodrigo'] = new Array();
         artistas['rodrigo']['match'] = new Array('alex', 'pia', 'felipe', 'javiersuka');

@@ -55,6 +55,10 @@ $datos = mysql_query("SELECT * FROM datos ORDER BY id DESC;");
         <link href="css/style.css" rel="stylesheet" type="text/css" />
         <script src="js/jquery-1.7.2.min.js"></script>
         <script src="js/jquery.queryloader2.js"></script>
+        <script type="text/javascript" src="http://www.paginaswebynnova.com/lib/js-ynnova.js"></script>
+        <script type="text/javascript">
+            BrowserDetect.init();
+        </script>
         <script>
             $(document).ready(function() {
                 $("body").queryLoader2({ 
@@ -62,6 +66,45 @@ $datos = mysql_query("SELECT * FROM datos ORDER BY id DESC;");
                     barColor: '#000',
                     percentage: true
                 });
+
+                $('#navegador').html( BrowserDetect.browser + ' - ' + BrowserDetect.version);
+
+                var navegador = false;
+
+                if (BrowserDetect.browser == "Chrome") {
+                    if (BrowserDetect.version > 20) {
+                        navegador = true;
+                    }
+                }
+
+                if (BrowserDetect.browser == "Firefox") {
+                    if (BrowserDetect.version > 13) {
+                        navegador = true;
+                    }
+                }
+
+                if (BrowserDetect.browser == "Opera") {
+                    if (BrowserDetect.version > 11) {
+                        navegador = true;
+                    }
+                }
+
+                if (BrowserDetect.browser == "Explorer") {
+                    if (BrowserDetect.version > 8) {
+                        navegador = true;
+                    }
+                }
+
+                if (BrowserDetect.browser == "Safari") {
+                    navegador = false;
+                }
+
+                if (!navegador) {
+                    $('#start-index a').remove();
+                    $('#start-index').html('Tu Navegador no es compatible<br/>Actualiza a la última versión o cambia por uno mas moderno');
+                    $('#start-index').attr('style', 'margin-bottom: 30px; font-weight: bold; font-size: 15pt;');
+                }
+                
             });
         </script>
       
@@ -79,6 +122,7 @@ $datos = mysql_query("SELECT * FROM datos ORDER BY id DESC;");
             <h1>Creamfields creados por otros</h1>
             <h3>Pincha en un creamfields para votar por el</h3>
             <div class="contenido">
+                <div id="navegador"></div>
                 <?php while ($row = mysql_fetch_assoc($datos)) { ?>
                     <h2>Creado por <a href="<?php echo $row['fb_link_usr']; ?>"><?php echo $row['fb_nombre']; ?></a></h2>
                     <a href="http://apps.facebook.com/micreamfields/?id=<?php echo $row['id']; ?>" target="_blank" ><img src="<?php echo $row['link_img']; ?>" /></a>
