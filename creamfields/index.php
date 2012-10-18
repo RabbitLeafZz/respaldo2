@@ -65,6 +65,18 @@ $_SESSION['perfil']['fb_link_usr'] = $perfil['link'];
         <script type="text/javascript">
             BrowserDetect.init();
         </script>
+        <script src="//connect.facebook.net/en_US/all.js"></script>
+        <script>
+            window.fbAsyncInit = function() {
+                FB.init({
+                    appId      : '531707813512666', // App ID
+                    status     : true, // check login status
+                    xfbml      : true  // parse XFBML
+                });
+
+                // Additional initialization code here
+            };
+        </script>
         <script>
             $(document).ready(function() {
                 $("body").queryLoader2({ 
@@ -134,6 +146,10 @@ $_SESSION['perfil']['fb_link_usr'] = $perfil['link'];
                         <div style="margin-left: 55px;">Compartido vía Mi Creamfields</div>
                     </div>
                     <a href="http://apps.facebook.com/micreamfields/?id=<?php echo $row['id']; ?>" target="_blank" ><img src="<?php echo $row['link_img']; ?>" /></a>
+                    <div class="comment">
+                        <fb:like href="http://apps.facebook.com/micreamfields/?id=<?php echo $row['id']; ?>" send="true" width="500" show-faces="false"></fb:like>
+                        <fb:comments href="http://apps.facebook.com/micreamfields/?id=<?php echo $row['id']; ?>" num-posts="2" width="500"></fb:comments>
+                    </div>
                     <hr />
                 <?php } ?>
             </div>

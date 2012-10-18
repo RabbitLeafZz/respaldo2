@@ -34,63 +34,19 @@ line-height: normal;
 
 }
 
-.bottom{
-position:absolute;
-	
-}
 
 #foto-david{
 startEffect : transparent; 
 hoverEffect : boxRainGrowReverse;	
 }
 
-#main {
-	
-	margin-left:-578px;
-	margin-top:185px;
+.horario div.escenario {
+  display: inline-block;
 }
 
-
-#clubroom{
-	
-	margin-left: -402px;
-	margin-top: -333px;
-}
-
-#alternative{
-	
-	margin-left: -226px;
-	margin-top: -334px;
-}
-
-#cream{
-	
-	margin-left: -55px;
-	margin-top: -334px;
-}
-
-#zero{
-	
-	margin-left: 118px;
-	margin-top: -335px;
-}
-
-#infected{
-	
-	margin-top: 14px;
-	
-}
-
-#rodrigoguendelman{
-	margin-top: -5px;
-}
-
-#vivesgforero{
-	margin-top: -5px; 
-}
-
-#phillipetruan{
-	margin-top: -6px;
+.bottom {
+  display: block;
+  position: absolute;
 }
 
 @font-face
@@ -2041,10 +1997,9 @@ body {
     width: 810px;
     height: 600px;
     margin: 0px auto;
-    font-family: 'creamfields';
+    font-family: 'creamfields;
     color: #351f4a;
     line-height: 35px;
-    text-align: center;
 }
 
 h1 {
@@ -2754,10 +2709,11 @@ margin-top: 68px;
   display: block;
   position: absolute;
   color: #FFF;
+  font-weight: bold;
   margin-top: 76px;
   height: 23px;
   width: 446px;
-  font-size: 13pt;
+  font-size: 8pt;
 }
 
 .individuales_text * {
