@@ -34,10 +34,105 @@ line-height: normal;
 
 }
 
+#alex {
+  margin-bottom: 5px;
+}
+
+#matanza {
+  margin-bottom: 12px;
+}
+
+#calvin {
+  margin-bottom: 8px;
+}
+
+#david {
+  margin-bottom: 15px;
+}
+
+#pia {
+  height: 25px;
+  margin-bottom: 8px;
+}
+
+#butano {
+  height: 25px;
+  margin-bottom: 11px;
+}
+
+#mathias {
+  margin-bottom: 6px;
+}
+
+#solomun {
+  margin-bottom: 2px;
+}
+
+#art {
+  margin-bottom: 4px;
+}
+
+#rodrigo {
+  height: 25px;
+  margin-bottom: 8px;
+}
+
+#marcos {
+  height: 25px;
+  margin-bottom: 11px;
+}
+
+#michael {
+  margin-bottom: 6px;
+}
+
+#nervo {
+  margin-bottom: 2px;
+}
+
+#alesso {
+  margin-bottom: 4px;
+}
+
+#felipe {
+  height: 25px;
+  margin-bottom: 8px;
+}
+
+#tweeter {
+  height: 25px;
+  margin-bottom: 11px;
+}
+
+#guti {
+  margin-bottom: 6px;
+}
+
+#reboot {
+  margin-bottom: 2px;
+}
+
+#james {
+  margin-bottom: 4px;
+}
+
+#zero div {
+  height: 25px;
+  margin-bottom: 5px;
+}
 
 #foto-david{
 startEffect : transparent; 
 hoverEffect : boxRainGrowReverse;	
+}
+
+.horario {
+  margin-top: 186px;
+  margin-left: 76px;
+}
+
+.horario * {
+  vertical-align: top;
 }
 
 .horario div.escenario {
@@ -430,6 +525,8 @@ font-family:creamfields;
    margin-left: 547px;
   margin-top: -359px;
 }
+
+
 
 #alex img {
   	
@@ -1997,7 +2094,7 @@ body {
     width: 810px;
     height: 600px;
     margin: 0px auto;
-    font-family: 'creamfields;
+    font-family: 'creamfields';
     color: #351f4a;
     line-height: 35px;
 }

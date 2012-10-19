@@ -21,6 +21,110 @@ margin-top: 4px;
 margin-right:20px;	
 }
 
+#alex {
+  margin-bottom: 5px;
+}
+
+#matanza {
+  margin-bottom: 12px;
+}
+
+#calvin {
+  margin-bottom: 8px;
+}
+
+#david {
+  margin-bottom: 15px;
+}
+
+#pia {
+  height: 25px;
+  margin-bottom: 8px;
+}
+
+#butano {
+  height: 25px;
+  margin-bottom: 11px;
+}
+
+#mathias {
+  margin-bottom: 6px;
+}
+
+#solomun {
+  margin-bottom: 2px;
+}
+
+#art {
+  margin-bottom: 4px;
+}
+
+#rodrigo {
+  height: 25px;
+  margin-bottom: 8px;
+}
+
+#marcos {
+  height: 25px;
+  margin-bottom: 11px;
+}
+
+#michael {
+  margin-bottom: 6px;
+}
+
+#nervo {
+  margin-bottom: 2px;
+}
+
+#alesso {
+  margin-bottom: 4px;
+}
+
+#felipe {
+  height: 25px;
+  margin-bottom: 8px;
+}
+
+#tweeter {
+  height: 25px;
+  margin-bottom: 11px;
+}
+
+#guti {
+  margin-bottom: 6px;
+}
+
+#reboot {
+  margin-bottom: 2px;
+}
+
+#james {
+  margin-bottom: 4px;
+}
+
+#zero div {
+  height: 25px;
+  margin-bottom: 5px;
+}
+
+#foto-david{
+startEffect : transparent; 
+hoverEffect : boxRainGrowReverse; 
+}
+
+.horario {
+  margin-top: 186px;
+  margin-left: 76px;
+}
+
+.horario * {
+  vertical-align: top;
+}
+
+.horario div.escenario {
+  display: inline-block;
+}
 
 .bottom{
 position:absolute;
@@ -32,54 +136,6 @@ startEffect : transparent;
 hoverEffect : boxRainGrowReverse;	
 }
 
-#main {
-	
-	margin-left:-578px;
-	margin-top:185px;
-}
-
-
-#clubroom{
-	
-	margin-left: -402px;
-	margin-top: -333px;
-}
-
-#alternative{
-	
-	margin-left: -226px;
-	margin-top: -334px;
-}
-
-#cream{
-	
-	margin-left: -55px;
-	margin-top: -334px;
-}
-
-#zero{
-	
-	margin-left: 118px;
-	margin-top: -335px;
-}
-
-#infected{
-	
-	margin-top: 14px;
-	
-}
-
-#rodrigoguendelman{
-	margin-top: -5px;
-}
-
-#vivesgforero{
-	margin-top: -5px; 
-}
-
-#phillipetruan{
-	margin-top: -6px;
-}
 
 @font-face
 {
@@ -88,380 +144,17 @@ hoverEffect : boxRainGrowReverse;
 }
 
 
-#BIO-alex{
-font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-   margin-left: 547px;
-  margin-top: -359px;
-}
-
-#BIO-michael{
-font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-   margin-left: 547px;
-  margin-top: -359px;
-}
-
-
-#BIO-rodrigo{
-font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-   margin-left: 547px;
-  margin-top: -359px;
-}
-
-#BIO-marcos{
-font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-   margin-left: 547px;
-  margin-top: -359px;
-}
-
-
-
-#BIO-matanza{
-font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-   margin-left: 547px;
-  margin-top: -359px;
-}
-
-#BIO-marciano{
-font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-   margin-left: 547px;
-  margin-top: -359px;
-}
-
-
-
-
-#BIO-art
-{
-	font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-   margin-left: 547px;
-  margin-top: -359px;
-}
-
-#BIO-calvin
-{
-	font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-  margin-left: 547px;
-  margin-top: -359px;
-}
-
-#BIO-alesso 
-{
-	font-size: medium;
-color: white;
+.bios {
+  font-size: medium;
+  color: white;
   font-family:creamfields;
   position: absolute;
   display: none;
-  margin-left: 547px;
-  margin-top: -359px;
+   margin-left: 526px;
+  margin-top: -322px;
+  text-align: center;
 }
 
-
-
-#BIO-david
-{
-	font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-   margin-left: 547px;
-  margin-top: -359px;
-}
-
-#BIO-fedde
-{
-	font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-   margin-left: 547px;
-  margin-top: -359px;
-}
-
-#BIO-guti
-{
-	font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-   margin-left: 547px;
-  margin-top: -359px;
-  }
-  
-  #BIO-fernandaarrau
-{
-	font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-   margin-left: 547px;
-  margin-top: -359px;
-  }
-    #BIO-vives
-{
-	font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-   margin-left: 547px;
-  margin-top: -359px;
-  }
-
-
-#BIO-infected
-{
-	font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-   margin-left: 547px;
-  margin-top: -359px;
-}
-
-#BIO-steve
-{
-	font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-  margin-left: 547px;
-  margin-top: -359px;
-}
-
-#BIO-jaime
-{
-	font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-   margin-left: 547px;
-  margin-top: -359px;
-}
-
-#BIO-mathias
-{
-	font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-   margin-left: 547px;
-  margin-top: -359px;
-}
-
-#BIO-nervo
-{
-	font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-   margin-left: 547px;
-  margin-top: -359px;
-}
-
-#BIO-reboot
-{
-	font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-   margin-left: 547px;
-  margin-top: -359px;
-}
-
-#BIO-solomun
-{font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-   margin-left: 547px;
-  margin-top: -359px;
-}
-
-#BIO-james
-{
-font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-   margin-left: 547px;
-  margin-top: -359px;
-}
-
-#BIO-felipe
-{
-font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-   margin-left: 547px;
-  margin-top: -359px;
-}
-
-#BIO-tweeter
-{
-font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-   margin-left: 547px;
-  margin-top: -359px;
-}
-
-#BIO-pia
-{
-font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-   margin-left: 547px;
-  margin-top: -359px;
-}
-
-#BIO-javiersuka
-{
-font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-   margin-left: 547px;
-  margin-top: -359px;
-}
-
-#BIO-fernandomujica
-{
-font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-   margin-left: 547px;
-  margin-top: -359px;
-}
-
-#BIO-rodrigoguendelman
-{
-font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-   margin-left: 547px;
-  margin-top: -359px;
-}
-
-#BIO-nicocrespo
-{
-font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-   margin-left: 547px;
-  margin-top: -359px;
-}
-
-#BIO-franciscoparra
-{
-font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-   margin-left: 547px;
-  margin-top: -359px;
-}
-
-#BIO-ignacio
-{
-font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-   margin-left: 547px;
-  margin-top: -359px;
-}
-
-#BIO-phillipe
-{
-font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-   margin-left: 547px;
-  margin-top: -359px;
-}
-
-#BIO-gustavo
-{
-font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-   margin-left: 547px;
-  margin-top: -359px;
-}
-
-#BIO-butano
-{
-font-size: medium;
-color: white;
-font-family:creamfields;
-  position: absolute;
-  display: none;
-   margin-left: 547px;
-  margin-top: -359px;
-}
 
 #alex img {
   	
@@ -2032,7 +1725,6 @@ body {
     font-family: 'creamfields';
     color: #351f4a;
     line-height: 35px;
-    text-align: center;
 }
 
 h1 {
@@ -2071,7 +1763,7 @@ h1 {
  
 #start-paso1 {
 margin-top: -9px;
-margin-left: 460px;
+margin-left: 552px;
 }
  
 #start-2 {
@@ -2559,6 +2251,10 @@ table.graph td img {
   margin-top: 140px;
 }
 
+.contenido_index {
+  text-align: center;
+}
+
 .creamfields_creados {
   margin-top: 30px;
 }
@@ -2597,6 +2293,11 @@ table.graph td img {
   margin-left: 202px;
 }
 
+.like-final {
+  text-align: center;
+  margin-left: 251px;
+  margin-top: -179px;
+}
 .comment {
   margin-top: 50px;
 }
@@ -2768,6 +2469,7 @@ margin-top: 68px;
   margin-top: 258px;
   margin-left: 3px;
   cursor: pointer;
+  text-align: center;
 }
 .juntos * {
   display: inline-block;
@@ -2807,13 +2509,13 @@ img.profile_picture {
 .scroll {
   height: 118px;
   width: 210px;
-  margin: 5 auto;
-  margin-left: 5px; 
-  margin-right: 5px;
-  margin-top: -10px;
+  margin: 0 auto;
+  margin-left: 13px;
+  padding-right: 10px;
   border: none;
   text-align: center;
   font-size: 13pt;
   line-height: normal;
-  overflow: auto;
+  overflow: auto;  
 }
+

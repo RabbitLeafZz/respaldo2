@@ -49,22 +49,42 @@ $now = getdate();
                     percentage: true
                 });
 
+                $.blockUI({
+                  message: 'Espera un momento...', 
+                  css: { 
+                    border: 'none', 
+                    padding: '15px', 
+                    backgroundColor: '#000', 
+                    '-webkit-border-radius': '10px', 
+                    '-moz-border-radius': '10px', 
+                    opacity: .5, 
+                    color: '#fff' 
+                  } 
+                }); 
+
                 canvas = document.getElementById("horario");
                 ctx = canvas.getContext("2d");
 
                 img.onload = function() {
                     ctx.drawImage(img, 0, 0);
-                }
-
-                img.src = "images/final/fondo.png";
 
                 <?php
+                    $total = sizeof($_SESSION['seleccion']);
+                    $total = $total-1;
                     foreach ($_SESSION['seleccion'] as $key => $value) {
                         echo "var imagen".$key." = new Image();\n";
                         echo "imagen".$key.".src = '" . $value['url'] . "';\n";
-                        echo "imagen".$key.".onload = function() { ctx.drawImage(imagen".$key.", ".$value['x'].", ".$value['y']."); }\n";
+                        echo "imagen".$key.".onload = function() {\n ctx.drawImage(imagen".$key.", ".$value['x'].", ".$value['y'].");\n";
+                        if ($key == $total) {
+                            echo "$.unblockUI();\n";
+                        }
+                        echo "}\n";
                     } 
                 ?>
+
+                }
+
+                img.src = "images/final/fondo.png";
 
                 $('#continuar').click(function() {
                     $.blockUI({
@@ -85,40 +105,21 @@ $now = getdate();
                         });
                     });
                 });
-                
-                <?php
-                    if ($_SESSION['reload'] == 1) {
-                ?>
-                        $.blockUI({
-                          message: 'Espera un momento...', 
-                          css: { 
-                            border: 'none', 
-                            padding: '15px', 
-                            backgroundColor: '#000', 
-                            '-webkit-border-radius': '10px', 
-                            '-moz-border-radius': '10px', 
-                            opacity: .5, 
-                            color: '#fff' 
-                          } 
-                        }); 
-                <?php
-                        echo "setTimeout ('window.location.reload();', 2000);";
-                        $_SESSION['reload'] = 0;
-                    }
-                ?>
+
             });
         </script>
     
     </head>
     <body>
-
-        <div id="contenido-imagen">
-            <canvas id="horario" height="370" width="530">
-            </canvas>
+        <div class="contenido_index">
+            <div id="contenido-imagen">
+                <canvas id="horario" height="370" width="530">
+                </canvas>
+            </div>
+                    <div class="botones2">
+                        <div id="modificar"><a href="paso_1_Creamfields2.php"><img src="images/botones/modificar.png" /></a></div>
+                        <div id="continuar"><a href="#"><img src="images/botones/continuar.png" /></a></div>
+                    </div>
         </div>
-                <div class="botones2">
-                    <div id="modificar"><a href="paso_1_Creamfields2.php"><img src="images/botones/modificar.png" /></a></div>
-                    <div id="continuar"><a href="#"><img src="images/botones/continuar.png" /></a></div>
-                </div>
     </body>
 </html>

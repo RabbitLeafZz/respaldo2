@@ -96,20 +96,25 @@ if ($user) {
         </script>
     </head>
     <body>
-        <div class="botones">
-            <div id="invitar"></div>
-            <div id="imprimir"></div>
-            <div id="mail"></div>
-            <a href="https://apps.facebook.com/micreamfields"><div id="volver"></div></a>
-        </div>
-        <iframe id="pdf" src="http://www.reframe.cl/creamfields/pdfimg.php?id=<?php echo $_GET['id']; ?>" frameborder="0" width="600" height="850">Si ves este mensaje, significa que tu navegador no tiene soporte para marcos o el mismo está deshabilitado</iframe>
+        <div class="contenido_index">
+            <div class="botones">
+                <div id="invitar"></div>
+                <div id="imprimir"></div>
+                <div id="mail"></div>
+                <a href="https://apps.facebook.com/micreamfields"><div id="volver"></div></a>
+            </div>
+            <div class="like-final">
+                <fb:like href="http://apps.facebook.com/micreamfields/?id=<?php echo $_GET['id']; ?>" send="true" width="800" show-faces="false"></fb:like>
+            </div>
+            <iframe id="pdf" src="http://www.reframe.cl/creamfields/pdfimg.php?id=<?php echo $_GET['id']; ?>" frameborder="0" width="600" height="850">Si ves este mensaje, significa que tu navegador no tiene soporte para marcos o el mismo está deshabilitado</iframe>
 
-        <div id="formemail">
-            <form id="enviarmail" action="mail/enviar.php" method="post">
-                <input type="text" name="destino" placeholder="Ingresa tu email" />
-                <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>" />
-                <input type="submit" value="Enviar" />
-            </form>
+            <div id="formemail">
+                <form id="enviarmail" action="mail/enviar.php" method="post">
+                    <input type="text" name="destino" placeholder="Ingresa tu email" />
+                    <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>" />
+                    <input type="submit" value="Enviar" />
+                </form>
+            </div>
         </div>
     </body>
 </html>

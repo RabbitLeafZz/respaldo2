@@ -40,6 +40,20 @@
         <link href="css/style2.css" rel="stylesheet" type="text/css" />
         <script src="js/jquery-1.7.2.min.js"></script>
         <script type="text/javascript" src="js/jquery.queryloader2.js"></script>
+        <script>
+            $(document).ready(function() {
+                
+
+                $("body").queryLoader2({ 
+                    backgroundColor: '#FFF', 
+                    barColor: '#000',
+                    percentage: true,
+                    onComplete: function() {
+                        $('.bios').hide();
+                    }
+                });
+            })
+        </script>
         <script type="text/javascript" src="js/jquery.blockUI.js" ></script>
         <script src="js/jquery.bpopup-0.7.0.min.js"></script>
 
@@ -260,11 +274,6 @@
       var seleccionados = new Array();
       var cambiar;
         $(document).on('ready', function() {
-          $("body").queryLoader2({ 
-                    backgroundColor: '#FFF', 
-                    barColor: '#000',
-                    percentage: true
-                });
 
           <?php if (isset($_SESSION['seleccion'])) {
               foreach ($_SESSION['seleccion'] as $key => $value) {
