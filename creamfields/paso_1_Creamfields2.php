@@ -42,6 +42,7 @@
         <script type="text/javascript" src="js/jquery.queryloader2.js"></script>
         <script type="text/javascript" src="js/jquery.blockUI.js" ></script>
         <script src="js/jquery.bpopup-0.7.0.min.js"></script>
+        <script src="js/jquery.nicescroll.js"></script>
 
         <script type="text/javascript">
         // Definición array de artistas para match
@@ -260,7 +261,9 @@
       var seleccionados = new Array();
       var cambiar;
         $(document).on('ready', function() {
-
+            $('.scroll').niceScroll({
+                cursorcolor:"#ef8c19"
+            });
           $("body").queryLoader2({ 
                     backgroundColor: '#FFF', 
                     barColor: '#000',
@@ -598,7 +601,7 @@
 			<div id="BIO-david" class="bios">
 				<div id="nombre-dj">David Guetta</div>
 				<div id="foto-dj"><img id="foto-david" src="images/fotosdjs-bio/david-guetta.png" /></div>
-  				<div id="descripcion-dj" class="scroll">Con más de 10 años de carrera, Guetta siempre ha sido un pionero. Se ha mantenido al frente del desarrollo de la música 				electrónica en todo momento, manteniendo una colaboración constante con artistas de la envergadura de Michael Jackson, Fergie, Rihanna, 50 Cent, 				Kylie Minogue, Madonna, Nervo, Usher, además de bandas como The Black Eyed Peas y LMFAO.</div>
+  				<div class="scroll">Con más de 10 años de carrera, Guetta siempre ha sido un pionero. Se ha mantenido al frente del desarrollo de la música 				electrónica en todo momento, manteniendo una colaboración constante con artistas de la envergadura de Michael Jackson, Fergie, Rihanna, 50 Cent, 				Kylie Minogue, Madonna, Nervo, Usher, además de bandas como The Black Eyed Peas y LMFAO.</div>
   				<div id="boton-david"><a href="#" id="flipToRecover" class="flipLink"><img src="images/botones/seleccionar_artista.png" /></a></div>
 			</div>
 			

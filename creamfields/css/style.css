@@ -21,18 +21,6 @@ margin-top: 4px;
 margin-right:20px;	
 }
 
-#descripcion-dj {
-margin: 5 auto;
-width: 210px;
-margin-left: 5px: margin-right: 5px;
-margin-top: -10px;
-border: none;
-text-align: center;
-font-size: 13pt;
-padding: 0;
-line-height: normal;
-
-}
 
 .bottom{
 position:absolute;
@@ -2818,5 +2806,14 @@ img.profile_picture {
 
 .scroll {
   height: 118px;
+  width: 210px;
+  margin: 5 auto;
+  margin-left: 5px; 
+  margin-right: 5px;
+  margin-top: -10px;
+  border: none;
+  text-align: center;
+  font-size: 13pt;
+  line-height: normal;
   overflow: auto;
 }
