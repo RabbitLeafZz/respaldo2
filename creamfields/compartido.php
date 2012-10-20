@@ -57,16 +57,17 @@ session_start();
     
     </head>
     <body>
-
-        <div id="compartido-imagen">
-            <h1>CREADO POR <a href="<?php echo $datos['fb_link_usr']; ?>"><?php echo $datos['fb_nombre']; ?></a></h1>
-            <img src="<?php echo $datos['link_img']; ?>" /> 
-            <div class="like">
-                <fb:like href="http://apps.facebook.com/micreamfields/?id=<?php echo $_GET['id']; ?>" send="true" width="800" show-faces="false"></fb:like>
+        <div class="contenido_index">
+            <div id="compartido-imagen">
+                <h1>CREADO POR <a href="<?php echo $datos['fb_link_usr']; ?>"><?php echo $datos['fb_nombre']; ?></a></h1>
+                <img src="<?php echo $datos['link_img']; ?>" /> 
+                <div class="like">
+                    <fb:like href="http://apps.facebook.com/micreamfields/?id=<?php echo $_GET['id']; ?>" send="true" width="800" show-faces="false"></fb:like>
+                </div>
             </div>
-        </div>
-        <div class="comment">
-            <fb:comments href="http://apps.facebook.com/micreamfields/?id=<?php echo $_GET['id']; ?>" num-posts="2" width="800"></fb:comments>
+            <div class="comment">
+                <fb:comments href="http://apps.facebook.com/micreamfields/?id=<?php echo $_GET['id']; ?>" num-posts="2" width="800"></fb:comments>
+            </div>
         </div>
     </body>
 </html>
