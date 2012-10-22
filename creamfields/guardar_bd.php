@@ -18,7 +18,7 @@ mysql_query($query);
 $id_bd = mysql_insert_id();
 
 
-$mensaje = "HEY! Estoy participando por un pase vip para Creamfields 2012!!, ayudame a ganar dando ME GUSTA a mi creamfields en el siguiente link: http://apps.facebook.com/micreamfields/?id=" . $id_bd;
+$mensaje = "Hey! Estoy participando por un pase vip para Creamfields 2012! Ayúdame a ganar dando ME GUSTA a “Mi Creamfields” en el siguiente link: http://apps.facebook.com/micreamfields/?id=" . $id_bd;
 $link = "http://apps.facebook.com/micreamfields/?id=" . $id_bd;
 
 //echo $user . "\n";

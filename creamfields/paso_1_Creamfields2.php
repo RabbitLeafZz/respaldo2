@@ -444,7 +444,7 @@
     </div>
 			
 			<div id="BIO-alex" class="bios">
-				<div id="nombre-dj">Alex adwanter</div>
+				<div id="nombre-dj">Alex Anwandter</div>
 				<div id="foto-dj"><img src="images/nacionales/alexadwandter.png" /></div>
   				<div class="scroll">El fundador y líder de Teleradio Donoso, Álex Anwandter participará en el main stage de Creamfields Chile 2012.
 Su debut como solista fue bajo el pseudónimo de Odisea a mediados del año 2010. Compuesto, producido e interpretado íntegramente por él, su nuevo trabajo vino a confirmar su interés por el soul y la música dance  electrónica. En 2011 retomó el nombre de Álex Anwandter para presentar un segundo disco titulado Rebeldes.
