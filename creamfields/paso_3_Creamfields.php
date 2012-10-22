@@ -37,14 +37,6 @@ if ($user) {
         <script src="js/jquery-1.7.2.min.js"></script>
         <script src="js/jquery.queryloader2.js"></script>
         <script src="js/jquery.bpopup-0.7.0.min.js"></script>
-        <script src="http://connect.facebook.net/en_US/all.js"></script>
-        <script>
-            FB.init({ 
-                appId:'531707813512666', cookie:true, 
-                status:true, xfbml:true 
-            });
-
-        </script>
         <script>
             $(document).ready(function() {
                 $("body").queryLoader2({ 
@@ -96,6 +88,13 @@ if ($user) {
         </script>
     </head>
     <body>
+		<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
         <div class="contenido_index">
             <div class="botones">
                 <div id="invitar"></div>

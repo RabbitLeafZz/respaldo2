@@ -8,6 +8,27 @@
 
 
 
+#instrucciones-1{
+	position: absolute;
+	margin-top: -2px;
+}
+
+#instrucciones-2{
+	position: absolute;
+	margin-top: -33px;
+}
+
+#instrucciones-1 img {
+	width: 520px;
+	margin-left: 20px;
+	
+}
+
+#instrucciones-2 img {
+	width: 540px;
+	margin-left: 8px;
+}
+
 #nombre-dj{
 	margin-top:15px;
 font-size: 2.5em;

@@ -757,7 +757,8 @@ Phillipe se caracteriza por mezclar los sonidos de la vieja, con los de la nueva
 			
 			
                 <div id="start-paso1"><a href="#"><img id="continuar" src="images/botones/continuar.png" /></a></div>
-
+				<div id="instrucciones-1"><img id="continuar" src="images/01.png" /></div>
+				<div id="instrucciones-2"><img id="continuar" src="images/02-1.png" /></div>
 
          <!-- JavaScript includes -->
 		<script src="js/script.js"></script>

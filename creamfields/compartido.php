@@ -33,7 +33,7 @@ session_start();
         <link href="css/style.css" rel="stylesheet" type="text/css" />
         <script src="js/jquery-1.7.2.min.js"></script>
         <script src="js/jquery.queryloader2.js"></script>
-        <script src="//connect.facebook.net/en_US/all.js"></script>
+        <script src="//connect.facebook.net/es_LA/all.js"></script>
         <script>
             window.fbAsyncInit = function() {
                 FB.init({

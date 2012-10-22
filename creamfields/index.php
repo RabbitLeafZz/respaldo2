@@ -64,7 +64,7 @@ $_SESSION['index'] = 0;
         <script type="text/javascript">
             BrowserDetect.init();
         </script>
-        <script src="//connect.facebook.net/en_US/all.js"></script>
+        <script src="//connect.facebook.net/es_LA/all.js"></script>
         <script>
             var FB;
             window.fbAsyncInit = function() {
